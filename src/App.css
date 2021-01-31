@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+.row-content {
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px; }
+
+  .img-fluid {
+    max-height: 120px;
+  }
