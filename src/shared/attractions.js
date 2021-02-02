@@ -3,7 +3,7 @@ export const ATTRACTIONS = [
         id: 0,
         name: 'Nisqually National Wildlife Refuge',
         image: 'assets/images/nisqually-refuge-thumbnail.jpg',
-        elevation: 1233,
+        rating: 4.9,
         description: "Located on the Nisqually River Delta in Southern Puget Sound, this refuge consists of three thousand acres of salt and freshwater marshes, grasslands and mixed forest habitats that provide a resting and nesting area for a wide variety of migratory birds. The Refuge features a one mile long boardwalk that extends out over the estuary, providing an up-close look at the wildlife and their ecosystems.",
         comments: [
             {
@@ -47,7 +47,7 @@ export const ATTRACTIONS = [
         id: 1,
         name: 'Tumwater Falls',
         image: 'assets/images/tumwater-falls-thumbnail.jpg',
-        elevation: 1233,
+        rating: 4.5,
         description: 'The Tumwater Falls Park houses a one-half mile scenic loop trail along the Deschutes River and three cascading waterfalls, with interpretive signs featuring pictures that illustrate the history of the area. Glimpse the old Olympic Brewery from the lower falls. Built in 1906, it housed the works that made "...what was unqualifiably the best beer made on the West Coast," according to a local newspaper. What made it so great? Olympia owner Leopold Schmidt discovered some artesian wells and used that water to make his beer. People said it was of unparalleled quality.',
         comments: [
             {
@@ -91,8 +91,8 @@ export const ATTRACTIONS = [
         id: 2,
         name:'Washington State Capitol',
         image: 'assets/images/state-capitol-thumbnail.jpg',
-        elevation: 877,
-        description: "The Washington State Capitol (or Legislative Building) in Olympia is the home of the government of the state of Washington. It contains chambers for the Washington State Legislature and offices for the governor, lieutenant governor, secretary of state and treasurer and is part of a campus consisting of several buildings. Buildings for the Washington Supreme Court, executive agencies and the Washington Governor's Mansion are part of the capitol campus. A visit to the Washington State Capitol Campus isn’t complete without a guided tour of the Legislative Building. These free, walking tours are offered daily and typically last about 50 minutes. You can also wander Campus and take in the many memorials, gardens, and special events featured on the grounds.",
+        rating: 4.3,
+        description: "The Washington State Capitol (or Legislative Building) in Olympia is the home of the government of the state of Washington. It contains chambers for the Washington State Legislature and offices for the governor, lieutenant governor, secretary of state and treasurer and is part of a campus consisting of several buildings. Buildings for the Washington Supreme Court, executive agencies and the Washington Governor's Mansion are part of the capitol campus. A visit to the Washington State Capitol Campus isn’t complete without a guided tour of the Legislative Building. These free, walking tours are offered daily and typically last about 50 minutes. You can also wander the Campus and take in the many memorials, gardens, and special events featured on the grounds.",
         comments: [
             {
                 id: 0,
@@ -135,7 +135,7 @@ export const ATTRACTIONS = [
         id: 3,
         name:'Olympia Farmers Market',
         image: 'assets/images/farmers-market-thumbnail.jpg',
-        elevation: 2901,
+        rating: 4,
         description: "The second largest farmers market in the state of Washington. The Olympia Farmers Market offers locally grown and organic produce, fruit from across Washington State, fresh meat from local farms, seafood, cut flowers, bakery items, desserts, eggs, cheese, plant starts and other nursery products, and artisan foods.  Enjoy live music while sampling the food vendors.",
         comments: [
             {
@@ -179,7 +179,7 @@ export const ATTRACTIONS = [
         id: 4,
         name:"Hands On Children's Museum",
         image: 'assets/images/childrens-museum-thumbnail.jpg',
-        elevation: 42,
+        rating: 4.2,
         description: "The museum has 28,000 square feet of indoor space and was built in November 2012. Its eight themed galleries create a sense of wonder and delight children who learn about science, technology, engineering, art and math through 150+ hands-on exhibits. The museum also has a half-acre Outdoor Discovery Center, one of the nation’s pilot sites for the Going Wild Program, where children can reconnect with nature. Hands On can also be the setting for your most memorable event ever! With a half-acre of indoor space, in addition to a half-acre outdoor space complete with a beach, garden and lighthouse lookout, the museum is a unique venue your guests will love. ",
         comments: [
             {
@@ -223,7 +223,7 @@ export const ATTRACTIONS = [
         id: 5,
         name:"Priest Point Park",
         image: 'assets/images/priest-point-thumbnail.jpg',
-        elevation: 42,
+        rating: 4,
         description: "Priest Point Park is a 314 acre park and the ideal spot to experience the natural beauty of the northwest. With more than four miles of hiking trails, nearly two miles of saltwater shoreline, a playground, and both small and large picnic shelters, there is something for everyone to enjoy. Priest Point Park is also home to a wide variety of animals.",
         comments: [
             {
@@ -267,7 +267,7 @@ export const ATTRACTIONS = [
         id: 6,
         name:"Percival Landing",
         image: 'assets/images/percival-landing-thumbnail.jpg',
-        elevation: 42,
+        rating: 3.9,
         description: "Percival Landing is one of Olympia's three waterfront parks and is located on the east side of Budd Bay on the southern most tip of Puget Sound. This popular park and tourist destination is in the heart of downtown and is a hub for gatherings, social interaction and public celebrations.  It not only contributes to the economic vitality of the central business district, it holds historical and cultural significance to the community.",
         comments: [
             {
@@ -311,7 +311,7 @@ export const ATTRACTIONS = [
         id: 7,
         name:"Tolmie State Park",
         image: 'assets/images/tolmie-park-thumbnail.jpg',
-        elevation: 42,
+        rating: 4,
         description: "Tolmie State Park is a 105-acre marine day-use park with 1,800 feet of saltwater shoreline on Puget Sound. This forested park is on Nisqually Beach, a few miles from Olympia, the state's capital city. The park offers a variety of beachside activities and an underwater park built by scuba divers. The park features an underwater park for scuba divers, a saltwater marsh, a beach, a forest and abundant wildlife.",
         comments: [
             {
@@ -355,7 +355,7 @@ export const ATTRACTIONS = [
         id: 8,
         name:"Mima Mounds",
         image: 'assets/images/mima-mounds-thumbnail.jpg',
-        elevation: 42,
+        rating: 4,
         description: "These mysterious mounds inspire imagination and speculation among visitors. With a half-mile ADA accessible path and another two miles of more rugged wandering, the Mima Mounds are a great destination for many hikers. Just what created these odd, bubble-like mounds southwest of Olympia is a mystery. And this puzzle is one with proposed answers ranging from giant gophers to earthquakes and glaciation, as well as extraterrestrial activity. Whatever the answer, the Mima Mounds Natural Area Preserve is a great place for walking or hiking, particularly in the spring when the wildflowers are in bloom on the rolling hills.",
         comments: [
             {
@@ -399,7 +399,7 @@ export const ATTRACTIONS = [
         id: 9,
         name:"Monarch Sculpture Park",
         image: 'assets/images/monarch-sculpture-thumbnail.jpg',
-        elevation: 42,
+        rating: 3.8,
         description: "Monarch Sculpture Park is a contemporary and somewhat quirky outdoor sculpture park and center for the arts. The grounds are open to the public daily from dawn to dusk. Located in the heart of the Thurston County prairie lands just a few miles south of Olympia, near Tenino, Washington, the park is designated as a primitive park with walk in, bike in, access from the Chehalis Western Trail. The park will continue its legacy of fine art and sculpture in nature. Monarch is a part of the Thurston County Bountiful Byways project. Its neighbors include the internationally renowned Wolf Haven and the new Great Wolf Lodge. Pets are welcome but must be leashed at and cleaned up after.",
         comments: [
             {

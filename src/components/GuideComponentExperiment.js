@@ -10,11 +10,17 @@ class Guide extends Component {
         };
     }
 
+    alternateheaders(id) {
+         if ((id % 2)) {
+            return (<div className="col col-sm-8 order-sm-last">);
+        } 
+    };
+
     render() {
         const guide = this.props.attractions.map(attraction => {
             return (
                 <div key={attraction.id} className="row row-content align-items-center">
-                    <div className="col col-sm-8 order-sm-last">
+                        alternateheaders(attraction.id);
                         <img src={attraction.image} alt={attraction.name} />
                         <p>Ave Rating: {attraction.rating} &nbsp;<RatingStars rating = {attraction.rating} />  
                         </p>
