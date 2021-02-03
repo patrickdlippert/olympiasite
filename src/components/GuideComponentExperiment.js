@@ -6,7 +6,7 @@ class Guide extends Component {
 
 
     alternateheaders(id) {
-         if ((id % 2)) {
+         if (!(id % 2)) {
             return (<div className="col col-sm-8 order-sm-last">);
         } 
     };
