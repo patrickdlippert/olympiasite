@@ -1,13 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { MDBIcon } from "mdbreact";
 
 // This component returns a group of 5 star icons given a rating value from 1-5
 // If a fraction is provided, it's rounded to the nearest 0.5 so that a half star
 // is displayed.
 
-class RatingStars extends Component {
 
-    renderStars(rating) {
+function RenderStars({rating}) {
         let content = [];
         let roundedRating = Math.round(rating*2)/2; //Round to nearest 0.5
         let remainder = roundedRating;
@@ -25,25 +24,24 @@ class RatingStars extends Component {
             
         }
         return content;
-    };
+}
 
 
  
 
-    render() {
-        if(this.props.rating) {
-            return(
-                <span>
-                    {this.renderStars(this.props.rating)}
-                </span>
-            );
-        }
-        else {
-            return(
-                <span></span>
-            );
-        }
-
+function RatingStars(props) {
+    if(props.rating) {
+        return(
+            <span>
+                <RenderStars rating={props.rating} />
+            </span>
+        );
+    }
+    else {
+        return(
+            <span />
+        );
     }
 }
+
 export default RatingStars;

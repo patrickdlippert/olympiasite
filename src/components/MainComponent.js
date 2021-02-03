@@ -5,9 +5,10 @@ import 'mdbreact/dist/css/mdb.css';
 
 
 import React, { Component } from 'react';
-import { Navbar, NavbarBrand, NavbarText } from 'reactstrap';
 import { MDBAnimation } from "mdbreact";
 import Guide from './GuideComponent';
+import Header from './HeaderComponent';
+import Footer from './FooterComponent';
 import ResourceCards from './ResourceCardsComponent';
 import { ATTRACTIONS } from '../shared/attractions';
 import { RESOURCES } from '../shared/resources';
@@ -28,16 +29,10 @@ class Main extends Component {
   render() {
     return (
       <div>
-        <Navbar dark color="primary">
-          <div className="container">
-            <NavbarBrand href="/"><img className="img-fluid" src="assets/images/OlympiaTopTen.png" alt=""></img></NavbarBrand>
-            <MDBAnimation reveal type="fadeInRight">
-            <NavbarText className="text-white"><h5>Explore the top ten attractions in Olympia, WA!</h5></NavbarText> </MDBAnimation>
-          </div>
-        </Navbar>
+        <Header />
         <Guide attractions={this.state.attractions} />
         <ResourceCards resources={this.state.resources} />
-
+        <Footer />
       </div>
     );
   }
