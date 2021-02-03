@@ -3,12 +3,6 @@ import { MDBAnimation } from "mdbreact";
 import RatingStars from "./RatingStarsComponent";
 
 class Guide extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            selectedAttraction: null
-        };
-    }
 
     render() {
         const guide = this.props.attractions.map(attraction => {

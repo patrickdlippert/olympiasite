@@ -3,12 +3,7 @@ import { MDBAnimation } from "mdbreact";
 import RatingStars from "./RatingStarsComponent";
 
 class Guide extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            selectedAttraction: null
-        };
-    }
+
 
     alternateheaders(id) {
          if ((id % 2)) {
