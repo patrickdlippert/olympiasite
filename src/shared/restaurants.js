@@ -1,12 +1,13 @@
-export const ATTRACTIONS = [
+export const RESTAURANTS = [
     {
         id: 0,
-        name: 'Nisqually National Wildlife Refuge',
-        image: 'assets/images/attractions/nisqually-refuge-thumbnail.jpg',
-        rating: 4.9,
-        type:"Park",
-        price: "$4 per four adults", 
-        description: "Located on the Nisqually River Delta in Southern Puget Sound, this refuge consists of three thousand acres of salt and freshwater marshes, grasslands and mixed forest habitats that provide a resting and nesting area for a wide variety of migratory birds. The Refuge features a one mile long boardwalk that extends out over the estuary, providing an up-close look at the wildlife and their ecosystems.",
+        name: 'Cascadia Grill',
+        image: 'assets/images/restaurants/cascadia-grill-thumbnail.jpg',
+        rating: 4.6,
+        address: "200 4th Ave W",
+        type: "Pacific Northwest",
+        price: "$$",
+        description: 'As owners Jef Dukes and Julie Guarino describe it, Cascadia Grill is "A Northwest brasserie, celebrating the independent spirit, food, wine, and craft beer of the Pacific Northwest. ...and Bigfoot!" Jef and his two brothers serve as the food visionaries in the kitchen. First and foremost, the brothers focused on flavor. That has followed them to Cascadia Grill where they have eschewed the fancy-looking meal for flavor-filled casual food. Cascadia Grill is a comfy corner haunt with handmade burgers, shakes & other nostalgic eats, plus an extensive tap list. Popular dishes include: Garlic Steak, Smoked Trout, Italian Sausage Burger and Bacon Wrapped Sirloin.',
         comments: [
             {
                 id: 0,
@@ -47,12 +48,13 @@ export const ATTRACTIONS = [
     },
     {
         id: 1,
-        name: 'Tumwater Falls',
-        image: 'assets/images/attractions/tumwater-falls-thumbnail.jpg',
-        rating: 4.5,
-        type:"Park",
-        price: "Free",
-        description: 'The Tumwater Falls Park houses a one-half mile scenic loop trail along the Deschutes River and three cascading waterfalls, with interpretive signs featuring pictures that illustrate the history of the area. Glimpse the old Olympic Brewery from the lower falls. Built in 1906, it housed the works that made "...what was unqualifiably the best beer made on the West Coast," according to a local newspaper. What made it so great? Olympia owner Leopold Schmidt discovered some artesian wells and used that water to make his beer. People said it was of unparalleled quality.',
+        name: 'Iron Rabbit Restaurant & Bar',
+        image: 'assets/images/restaurants/iron-rabbit-thumbnail.jpg',
+        rating: 4.3,
+        address: "2103 Harrison Ave NW",
+        type: "Pacific Northwest",
+        price: "$$",
+        description: "The Iron Rabbit Restaurant & Bar is a family friendly restaurant located in Olympia’s Westside neighborhood. The restaurant’s open kitchen allows their team to show off their skills and dedication in preparing creative and inspired menu options for every palate. They feature a diverse list of quality, local, and distinctive spirits, beer, and wine, making the Iron Rabbit’s full service bar the perfect spot for date night or simply gathering with friends. Designed with the entire family in mind, there is something for everyone at the Iron Rabbit. Signature dishes include: Crab Bisque, Drunken Sailor (seafood in a spiced cream sauce) and Gourmet Burgers.",
         comments: [
             {
                 id: 0,
@@ -93,12 +95,13 @@ export const ATTRACTIONS = [
     },
     {
         id: 2,
-        name:'Washington State Capitol',
-        image: 'assets/images/attractions/state-capitol-thumbnail.jpg',
-        rating: 4.3,
-        type:"Tour", 
-        price: "Free",
-        description: "The Washington State Capitol (or Legislative Building) in Olympia is the home of the government of the state of Washington. It contains chambers for the Washington State Legislature and offices for the governor, lieutenant governor, secretary of state and treasurer and is part of a campus consisting of several buildings. Buildings for the Washington Supreme Court, executive agencies and the Washington Governor's Mansion are part of the capitol campus. A visit to the Washington State Capitol Campus isn’t complete without a guided tour of the Legislative Building. These free, walking tours are offered daily and typically last about 50 minutes. You can also wander the Campus and take in the many memorials, gardens, and special events featured on the grounds.",
+        name:"Anthony's Homeport Olympia",
+        image: 'assets/images/restaurants/anthonys-homeport-thumbnail.jpg',
+        rating: 4.4,
+        address: "704 Columbia St NW",
+        type: "Seafood",
+        price: "$$$",
+        description: "Anthony’s HomePort Olympia is located just off the I-5 corridor on Budd Inlet adjacent to the Olympia’s Farmer’s market. The restaurant features exquisite views of the local marine activities as well as the beautiful Port Plaza. Signature dishes include: Clam Chowder, Pan Fried Oysters, Dungeness Crabcakes, Blackened Rockfish and Wild Alaskan Salmon.",
         comments: [
             {
                 id: 0,
@@ -139,12 +142,13 @@ export const ATTRACTIONS = [
     },
     {
         id: 3,
-        name:'Olympia Farmers Market',
-        image: 'assets/images/attractions/farmers-market-thumbnail.jpg',
-        rating: 4,
-        type:"Shopping", 
-        price: "Free",
-        description: "The second largest farmers market in the state of Washington. The Olympia Farmers Market offers locally grown and organic produce, fruit from across Washington State, fresh meat from local farms, seafood, cut flowers, bakery items, desserts, eggs, cheese, plant starts and other nursery products, and artisan foods.  Enjoy live music while sampling the food vendors.",
+        name:'Budd Bay Cafe',
+        image: 'assets/images/restaurants/buddbay-cafe-thumbnail.jpg',
+        rating: 4.4,
+        address: "525 Columbia St NW",
+        type: "Seafood",
+        price: "$$",
+        description: "Budd Bay Cafe continues to be “Olympia’s favorite waterfront restaurant.” Open 7 days a week, serving breakfast, lunch, dinner, and boasting a 180-degree bay view from the state capitol to the Olympic Mountains. Happy hour in their fully-stocked bar is served from 3:00-5:30 every day. Budd Bay Cafe's award winning Sunday brunch buffet, voted best in the south sound for over 25 years, is not to be missed. Popular dishes include: Award Winning New England Clam Chowder, Salmon and Goat Cheese Pate, Razor Clams and Alaskan King Crab Legs.",
         comments: [
             {
                 id: 0,
@@ -185,12 +189,13 @@ export const ATTRACTIONS = [
     },
     {
         id: 4,
-        name:"Hands On Children's Museum",
-        image: 'assets/images/attractions/childrens-museum-thumbnail.jpg',
-        rating: 4.2,
-        type:"Museum", 
-        price: "$14.95",
-        description: "The museum has 28,000 square feet of indoor space and was built in November 2012. Its eight themed galleries create a sense of wonder and delight children who learn about science, technology, engineering, art and math through 150+ hands-on exhibits. The museum also has a half-acre Outdoor Discovery Center, one of the nation’s pilot sites for the Going Wild Program, where children can reconnect with nature. Hands On can also be the setting for your most memorable event ever! With a half-acre of indoor space, in addition to a half-acre outdoor space complete with a beach, garden and lighthouse lookout, the museum is a unique venue your guests will love. ",
+        name:"Mediterranean Breeze",
+        image: 'assets/images/restaurants/mediterranean-breeze-thumbnail.jpg',
+        rating: 4.6,
+        address: "2302 Harrison Ave NW",
+        type: "Mediterranean",
+        price: "$$",
+        description: "Chef/Owner Mehmet Sipahioglu was born and raised in Turkey and immigrated to the U.S. at the age of 30. He has a rich background of business ventures, including working with fresh produce, and raising chickens & cattle. Mehmet's passion for quality food led him to opening his own restaurant and has been around the restaurant industry for a long time. Signature dishes include: Donair Kebab, Iskender Kebab, Lamb and Chicken Shish. Bring a group and enjoy a family-style feast!",
         comments: [
             {
                 id: 0,
@@ -231,12 +236,13 @@ export const ATTRACTIONS = [
     },
     {
         id: 5,
-        name:"Priest Point Park",
-        image: 'assets/images/attractions/priest-point-thumbnail.jpg',
-        rating: 4,
-        type:"Park",
-        price: "Free",
-        description: "Priest Point Park is a 314 acre park and the ideal spot to experience the natural beauty of the northwest. With more than four miles of hiking trails, nearly two miles of saltwater shoreline, a playground, and both small and large picnic shelters, there is something for everyone to enjoy. Priest Point Park is also home to a wide variety of animals.",
+        name:"Basilico Ristorante",
+        image: 'assets/images/restaurants/basilico-ristorante-thumbnail.jpg',
+        rating: 4.6,
+        address: "507 Capitol Way S #A",
+        type: "Italian",
+        price: "$$$",
+        description: "Italian, untranslated. Basilico embraces the slow food movement, bringing old world recipes and traditional preparations to Olympia. All pasta and ravioli are made by hand and sauces cook for 3-4 hours. At Basilico, they take time and pride in preparing the closest thing to current cuisine in Italy as possible. It's a quaint, high-end restaurant with a gluten-free menu, handmade Northern Italian dishes & regional wines. Popular dishes are: Lamb Ravioli, Rack of Lamb, Pappardelle Al Cinghiale, and Asparagus Ravioli. An authentic get-away in the heart of downtown Olympia!",
         comments: [
             {
                 id: 0,
@@ -277,12 +283,13 @@ export const ATTRACTIONS = [
     },
     {
         id: 6,
-        name:"Percival Landing",
-        image: 'assets/images/attractions/percival-landing-thumbnail.jpg',
-        rating: 3.9,
-        type:"Park",
-        price: "Free",
-        description: "Percival Landing is one of Olympia's three waterfront parks and is located on the east side of Budd Bay on the southern most tip of Puget Sound. This popular park and tourist destination is in the heart of downtown and is a hub for gatherings, social interaction and public celebrations.  It not only contributes to the economic vitality of the central business district, it holds historical and cultural significance to the community.",
+        name:"Dockside Bistro & Wine Bar",
+        image: 'assets/images/restaurants/dockside-bistro-thumbnail.jpg',
+        rating: 4.7,
+        address: "501 Columbia St NW Suite B",
+        type: "Fine Dining",
+        price: "$$$",
+        description: "Dockside Bistro & Wine Bar is a fine dining restaurant under the direction of Chef Laurie Nguyen. Her focus on fusion European and SE Asian, and New American Cuisine. In addition to in-house lunch and dinner service, they also offer a carry-out menu. Dockside Bistro uses as many locally-sourced ingredients as possible including locally collected mushrooms, Misty Isle All-Natural Beef, Painted Hills All-Natural Beef, Taylor Shellfish, Nicky Farms products, and products from vendors at our local farmers market. They also use sustainably harvested seafood and Food Alliance Certified Produce. Popular dishes include: Dungeness Crab Cakes, Diver Scallop & Hazelnut Pork Belly, Pear Gorgonzola Ravioli and Pistachio Encrusted Parmesan Halibut.",
         comments: [
             {
                 id: 0,
@@ -323,12 +330,13 @@ export const ATTRACTIONS = [
     },
     {
         id: 7,
-        name:"Tolmie State Park",
-        image: 'assets/images/attractions/tolmie-park-thumbnail.jpg',
-        rating: 4,
-        type:"Park",
-        price: "Free",
-        description: "Tolmie State Park is a 105-acre marine day-use park with 1,800 feet of saltwater shoreline on Puget Sound. This forested park is on Nisqually Beach, a few miles from Olympia, the state's capital city. The park offers a variety of beachside activities and an underwater park built by scuba divers. The park features an underwater park for scuba divers, a saltwater marsh, a beach, a forest and abundant wildlife.",
+        name:"Tugboat Annie's",
+        image: 'assets/images/restaurants/tugboat-annies-thumbnail.jpg',
+        rating: 4.4,
+        address: "2100 W Bay Dr NW",
+        type: "American",
+        price: "$$",
+        description: "American Casual Dining on the Waterfront! Something for everyone & everyone is family. If you want to go where the staff remember your name, go here! Since 1999, Tugboat Annie's has been Olympia's fun place to look out onto the Great Pacific Northwest. Like Olympia itself, it's a pretty casual place, a great place for family and friends. Popular dishes: Fish & Chips, Crab Melt, Jambalaya, Fried Oysters and Prime Rib.",
         comments: [
             {
                 id: 0,
@@ -369,12 +377,13 @@ export const ATTRACTIONS = [
     },
     {
         id: 8,
-        name:"Mima Mounds",
-        image: 'assets/images/attractions/mima-mounds-thumbnail.jpg',
-        rating: 4,
-        type:"Park",
-        price: "Free",
-        description: "These mysterious mounds inspire imagination and speculation among visitors. With a half-mile ADA accessible path and another two miles of more rugged wandering, the Mima Mounds are a great destination for many hikers. Just what created these odd, bubble-like mounds southwest of Olympia is a mystery. And this puzzle is one with proposed answers ranging from giant gophers to earthquakes and glaciation, as well as extraterrestrial activity. Whatever the answer, the Mima Mounds Natural Area Preserve is a great place for walking or hiking, particularly in the spring when the wildflowers are in bloom on the rolling hills.",
+        name:"Gardner's Restaurant",
+        image: 'assets/images/restaurants/gardners-seafood-thumbnail.jpg',
+        rating: 4.7,
+        address: "111 Thurston Ave NW",
+        type: "Seafood",
+        price: "$$$",
+        description: "Gardner’s has been family owned since 1983 and has proven to be the favorite place to dine in Olympia. We strive to use the freshest, local and seasonal ingredients. Everything is created from scratch, including soups and sauces to an abundance of desserts. You will find many handcrafted cocktails and delicious local wines to complement your meal. Popular dishes include: Seafood Trio, Duroc Pork Chop, Seafood Fettuccine and Lasagna.",
         comments: [
             {
                 id: 0,
@@ -415,12 +424,13 @@ export const ATTRACTIONS = [
     },
     {
         id: 9,
-        name:"Monarch Sculpture Park",
-        image: 'assets/images/attractions/monarch-sculpture-thumbnail.jpg',
-        rating: 3.8,
-        type:"Park",
-        price: "Free (donations appreciated)",
-        description: "Monarch Sculpture Park is a contemporary and somewhat quirky outdoor sculpture park and center for the arts. The grounds are open to the public daily from dawn to dusk. Located in the heart of the Thurston County prairie lands just a few miles south of Olympia, near Tenino, Washington, the park is designated as a primitive park with walk in, bike in, access from the Chehalis Western Trail. The park will continue its legacy of fine art and sculpture in nature. Monarch is a part of the Thurston County Bountiful Byways project. Its neighbors include the internationally renowned Wolf Haven and the new Great Wolf Lodge. Pets are welcome but must be leashed at and cleaned up after.",
+        name:"Anthony's Hearthfire Grill",
+        image: 'assets/images/restaurants/anthonys-hearthfire-thumbnail.jpg',
+        rating: 4.3,
+        address: "1675 Marine Dr NE",
+        type: "Seafood",
+        price: "$$$",
+        description: "Built on pilings over Budd Inlet, Anthony’s Hearthfire Grill hosts an unobstructed view of the Puget Sound. Offering guests premier Northwest designer beef and fresh Northwest seafood, this high-energy restaurant specializes in hearthfire cooking. Popular dishes include: Fire Roasted Tomato Soup, Filet Mignon, Seafood Mac and Flank Steak.",
         comments: [
             {
                 id: 0,

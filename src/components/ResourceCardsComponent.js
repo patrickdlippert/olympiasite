@@ -36,7 +36,7 @@ class ResourceCards extends Component {
     return (
       <div className="container">
         <div className="row">
-          <h2>More Resources</h2>
+          <h3>More Resources</h3>
           <div className="row__posters">
             {cascade}
           </div>

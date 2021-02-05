@@ -7,17 +7,13 @@ function AlternateHeaders({attraction}) {
     if ((attraction.id % 2)) {
         return (            
             <div className="col col-md-7 order-sm-last">
-                <img className="d-flex mr-3" src={attraction.image} alt={attraction.name} />
-                <p>Ave Rating: {attraction.rating} &nbsp;<RatingStars rating = {attraction.rating} />  
-                </p>
+                <img className="d-flex mr-3 img-fluid" src={attraction.image} alt={attraction.name} />
             </div>
         );
     }
     return (            
         <div className="col col-md-7">
-            <img className="d-flex mr-3" src={attraction.image} alt={attraction.name} />
-            <p>Ave Rating: {attraction.rating} &nbsp;<RatingStars rating = {attraction.rating} />  
-            </p>
+            <img className="d-flex mr-3 img-fluid" src={attraction.image} alt={attraction.name} />
         </div>
     );
 }
@@ -30,7 +26,10 @@ function RenderGuideItem({attraction}) {
             <div className="col-md-5 text-left">
                 <MDBAnimation reveal type="zoomIn">
                     <h2>{attraction.name}</h2>
+                    <p className="d-sm-block">Rating:&nbsp;<span className="text-danger">{attraction.rating}</span> &nbsp;<RatingStars rating = {attraction.rating}  />
+                    &nbsp;&nbsp;&nbsp;{attraction.price} - {attraction.type}</p>
                     <p>{attraction.description}</p>
+                    <p>Address: {attraction.address}</p>
                 </MDBAnimation>
             </div>
         </React.Fragment>

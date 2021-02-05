@@ -9,9 +9,14 @@ import { MDBAnimation } from "mdbreact";
 import Guide from './GuideComponent';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
+import Home from './HomeComponent.js';
 import ResourceCards from './ResourceCardsComponent';
+import { Switch, Route, Redirect } from 'react-router-dom';
 import { ATTRACTIONS } from '../shared/attractions';
+import { RESTAURANTS } from '../shared/restaurants';
 import { RESOURCES } from '../shared/resources';
+import { PROMOTIONS } from '../shared/promotions';
+import ScrollToTop from './ScrollToTop';
 
 
 class Main extends Component {
@@ -19,18 +24,34 @@ class Main extends Component {
     super(props);
     this.state = {
       attractions: ATTRACTIONS,
+      restaurants: RESTAURANTS,
       resources: RESOURCES,
-      selectedAttraction: null
+      promotions: PROMOTIONS
     };
   }
 
 
 
   render() {
+
+    const HomePage = () => {
+      return (
+        <Home 
+          promotion={this.state.promotions.filter(promotion => promotion.featured)[0]}
+      />
+      );
+    }
+
     return (
       <div>
         <Header />
-        <Guide attractions={this.state.attractions} />
+        <ScrollToTop />
+        <Switch>
+          <Route path='/home' component={HomePage} />
+          <Route exact path='/attractions' render={() => <Guide attractions={this.state.attractions} />} />
+          <Route exact path='/restaurants' render={() => <Guide attractions={this.state.restaurants} />} />
+          <Redirect to='/home' /> 
+        </Switch>
         <ResourceCards resources={this.state.resources} />
         <Footer />
       </div>
