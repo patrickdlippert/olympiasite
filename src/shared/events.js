@@ -70,194 +70,52 @@ export const EVENTS = [
         url: 'https://www.stmartin.edu/news-events/university-events/saint-martins-food-and-wine-festival',
         date: "Aug 14",
         description: "Since 1990. St. Martin's Alumni Association's annual food and wine event with regional vitners and microbrews joining South Sound restaurants to provide you with tantalizing tastes to enjoy. Find your favorite wineries, breweries, and restaurants. Then plan to meet family and friends at the festival for a day of wine tasting, great food, and live music. Each year the Festival hosts regional wineries to promote their bottled spirits, microbrewers to share their best brews and South Sound restaurants and food vendors to provide their tasty treats for all to enjoy. Plus there will be entertainment on two stages throughout the day. Proceeds from this event will support scholarships for Saint Martin’s University students and other local causes in the communities in which the Saint Martin’s Alumni Association serves."
-        
     },
     {
         id: 6,
-        name:"Dockside Bistro & Wine Bar",
-        image: 'assets/images/restaurants/dockside-bistro-thumbnail.jpg',
+        name:"Olympia Wooden Boat Fair",
+        image: 'assets/images/events/woodenboat-fest-thumbnail.jpg',
         rating: 4.7,
-        address: "501 Columbia St NW Suite B",
-        type: "Fine Dining",
-        price: "$$$",
-        description: "Dockside Bistro & Wine Bar is a fine dining restaurant under the direction of Chef Laurie Nguyen. Her focus on fusion European and SE Asian, and New American Cuisine. In addition to in-house lunch and dinner service, they also offer a carry-out menu. Dockside Bistro uses as many locally-sourced ingredients as possible including locally collected mushrooms, Misty Isle All-Natural Beef, Painted Hills All-Natural Beef, Taylor Shellfish, Nicky Farms products, and products from vendors at our local farmers market. They also use sustainably harvested seafood and Food Alliance Certified Produce. Popular dishes include: Dungeness Crab Cakes, Diver Scallop & Hazelnut Pork Belly, Pear Gorgonzola Ravioli and Pistachio Encrusted Parmesan Halibut.",
-        comments: [
-            {
-                id: 0,
-                rating: 5, 
-                text: "What a magnificent view!",
-                author: "Tinus Lorvaldes",
-                date: "2018-10-25T16:30Z"
-            },
-            {
-                id: 1,
-                rating: 4, 
-                text: "The campground was beautiful, but the bugs could bite sometimes.",
-                author: "Brennen Ech",
-                date: "2017-06-17T03:33Z"
-            },
-            {
-                id: 2,
-                rating: 5, 
-                text: "I caught a world-record-breaking trout here on my last visit.",
-                author: "McKenzie Sebastian",
-                date: "2019-02-18T18:12Z"
-            },
-            {
-                id: 3,
-                rating: 5, 
-                text: "A wonderful place to reconnect with nature.",
-                author: "Jordan Runn",
-                date: "2019-08-04T20:11Z"
-            },
-            {
-                id: 4,
-                rating: 4, 
-                text: "The stars at night were magnificent!",
-                author: "Ann Dabramov",
-                date: "2018-07-23T19:44Z"
-            }
-        ]
+        address: "217 Thurston Ave NW, Olympia, WA 98501",
+        type: "Outdoor Festival",
+        price: "Free",
+        url: 'http://www.olywoodenboat.org/',
+        date: "May 8-9",
+        description: "The Olympia Wooden Boat Fair, held Saturday and Sunday on Mother’s Day Weekend is a traditional community and family event, is free and open to the public on Saturday from 10 a.m. to 6 p.m. and Sunday from 11 a.m. to 5 p.m. On display will be all types of wooden boats including power, sail, row boats, dinghies, kayaks, and canoes. Come and enjoy the handmade artwork, pottery, wooden décor, jewelry, clothing, homemade food products, and many more nautical-related items from local artisans. When the family gets hungry, take a walk through the International Food Alley booths offering traditional burgers, seafood, international choices and tempting desserts. There will be a Children’s Boat-building booth on Saturday from 10 a.m. until 2 p.m., or while supplies last. The fair is also known for showcasing local musical entertainment starting at noon on Saturday."        
     },
     {
         id: 7,
-        name:"Tugboat Annie's",
-        image: 'assets/images/restaurants/tugboat-annies-thumbnail.jpg',
+        name:"JBLM Freedom Fest",
+        image: 'assets/images/events/freedom-fest-thumbnail.jpg',
         rating: 4.4,
-        address: "2100 W Bay Dr NW",
-        type: "American",
-        price: "$$",
-        description: "American Casual Dining on the Waterfront! Something for everyone & everyone is family. If you want to go where the staff remember your name, go here! Since 1999, Tugboat Annie's has been Olympia's fun place to look out onto the Great Pacific Northwest. Like Olympia itself, it's a pretty casual place, a great place for family and friends. Popular dishes: Fish & Chips, Crab Melt, Jambalaya, Fried Oysters and Prime Rib.",
-        comments: [
-            {
-                id: 0,
-                rating: 5, 
-                text: "What a magnificent view!",
-                author: "Tinus Lorvaldes",
-                date: "2018-10-25T16:30Z"
-            },
-            {
-                id: 1,
-                rating: 4, 
-                text: "The campground was beautiful, but the bugs could bite sometimes.",
-                author: "Brennen Ech",
-                date: "2017-06-17T03:33Z"
-            },
-            {
-                id: 2,
-                rating: 5, 
-                text: "I caught a world-record-breaking trout here on my last visit.",
-                author: "McKenzie Sebastian",
-                date: "2019-02-18T18:12Z"
-            },
-            {
-                id: 3,
-                rating: 5, 
-                text: "A wonderful place to reconnect with nature.",
-                author: "Jordan Runn",
-                date: "2019-08-04T20:11Z"
-            },
-            {
-                id: 4,
-                rating: 4, 
-                text: "The stars at night were magnificent!",
-                author: "Ann Dabramov",
-                date: "2018-07-23T19:44Z"
-            }
-        ]
+        address: "Joint Base Lewis-McChord, WA 98433",
+        type: "Outdoor Festival",
+        price: "Free",
+        url: 'http://www.JBLMFreedomFest.com/',
+        date: "July 4",
+        description: "Freedom Fest offers a day of fun, food, and entertainment for the whole family. All-day attractions include a midway with carnival rides, fair food and other concessions, Kids World activities, jugglers, stilt-walkers and other roving performers and live music. Freedom Fest will take place at Cowan Stadium, north of Olympia from 11 a.m. to 11 p.m. and will culminate with a grand finale fireworks show. Admission and parking are free, and visitors should bring photo ID."
     },
     {
         id: 8,
-        name:"Gardner's Restaurant",
-        image: 'assets/images/restaurants/gardners-seafood-thumbnail.jpg',
+        name:"Olympia Arts Walk",
+        image: 'assets/images/events/arts-walk-thumbnail.jpg',
         rating: 4.7,
-        address: "111 Thurston Ave NW",
-        type: "Seafood",
-        price: "$$$",
-        description: "Gardner’s has been family owned since 1983 and has proven to be the favorite place to dine in Olympia. We strive to use the freshest, local and seasonal ingredients. Everything is created from scratch, including soups and sauces to an abundance of desserts. You will find many handcrafted cocktails and delicious local wines to complement your meal. Popular dishes include: Seafood Trio, Duroc Pork Chop, Seafood Fettuccine and Lasagna.",
-        comments: [
-            {
-                id: 0,
-                rating: 5, 
-                text: "What a magnificent view!",
-                author: "Tinus Lorvaldes",
-                date: "2018-10-25T16:30Z"
-            },
-            {
-                id: 1,
-                rating: 4, 
-                text: "The campground was beautiful, but the bugs could bite sometimes.",
-                author: "Brennen Ech",
-                date: "2017-06-17T03:33Z"
-            },
-            {
-                id: 2,
-                rating: 5, 
-                text: "I caught a world-record-breaking trout here on my last visit.",
-                author: "McKenzie Sebastian",
-                date: "2019-02-18T18:12Z"
-            },
-            {
-                id: 3,
-                rating: 5, 
-                text: "A wonderful place to reconnect with nature.",
-                author: "Jordan Runn",
-                date: "2019-08-04T20:11Z"
-            },
-            {
-                id: 4,
-                rating: 4, 
-                text: "The stars at night were magnificent!",
-                author: "Ann Dabramov",
-                date: "2018-07-23T19:44Z"
-            }
-        ]
+        address: "5th Avenue, Downtown Olympia, WA 98501",
+        type: "Outdoor Festival",
+        price: "Free",
+        url: 'http://olympiawa.gov/city-services/parks/artswalk.aspx',
+        date: "Oct 1-31",
+        description: "Olympia Arts Walk is a semi-annual community event celebrating the arts. In a typical year, thousands gather in downtown Olympia in both the Spring and Fall for a festive arts experience that uses creativity to connect and engage people from all walks of life. Many of our unique downtown businesses and organizations transform their spaces into creative hubs filled with art, demonstrations, and performances. In the streets and sidewalks you will find pop up performances and places to connect around almost every corner."
     },
     {
         id: 9,
-        name:"Anthony's Hearthfire Grill",
-        image: 'assets/images/restaurants/anthonys-hearthfire-thumbnail.jpg',
+        name:"Tumwater Artesian Brewfest",
+        image: 'assets/images/events/tumwater-brewfest-thumbnail.jpg',
         rating: 4.3,
-        address: "1675 Marine Dr NE",
-        type: "Seafood",
-        price: "$$$",
-        description: "Built on pilings over Budd Inlet, Anthony’s Hearthfire Grill hosts an unobstructed view of the Puget Sound. Offering guests premier Northwest designer beef and fresh Northwest seafood, this high-energy restaurant specializes in hearthfire cooking. Popular dishes include: Fire Roasted Tomato Soup, Filet Mignon, Seafood Mac and Flank Steak.",
-        comments: [
-            {
-                id: 0,
-                rating: 5, 
-                text: "What a magnificent view!",
-                author: "Tinus Lorvaldes",
-                date: "2018-10-25T16:30Z"
-            },
-            {
-                id: 1,
-                rating: 4, 
-                text: "The campground was beautiful, but the bugs could bite sometimes.",
-                author: "Brennen Ech",
-                date: "2017-06-17T03:33Z"
-            },
-            {
-                id: 2,
-                rating: 5, 
-                text: "I caught a world-record-breaking trout here on my last visit.",
-                author: "McKenzie Sebastian",
-                date: "2019-02-18T18:12Z"
-            },
-            {
-                id: 3,
-                rating: 5, 
-                text: "A wonderful place to reconnect with nature.",
-                author: "Jordan Runn",
-                date: "2019-08-04T20:11Z"
-            },
-            {
-                id: 4,
-                rating: 4, 
-                text: "The stars at night were magnificent!",
-                author: "Ann Dabramov",
-                date: "2018-07-23T19:44Z"
-            }
-        ]
+        address: "555 Israel Road SW, Tumwater, WA 98501",
+        price: "Free",
+        url: 'https://tumwaterartesianbrewfest.com/',
+        date: "Aug 21",
+        description: "There will be more than 136 beverage choices in all, not to mention delicious food, fun games, and captivating entertainment. The Tumwater Artesian Brewfest provides a unique outdoor venue (in the shadow of the former Olympia Brewery) for you to SIP over 100 craft beers from 50 NW breweries along with cider, wine, and spirits; SAVOR food from local vendors and restaurants; and PLAY super-sized beer pong, putt putt golf, enter stein holding competitions, and more! 21 and over event."
     }
 ];

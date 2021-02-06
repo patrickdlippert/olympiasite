@@ -19,6 +19,10 @@ h1, h2, h3, h4, h5, .card-body>.card-title {
   border-bottom: 1px ridge;
   min-height: 200px; }
 
+.footer-image {
+    max-height: 150px;
+  }
+
   .card-title {
     color: black;
 
@@ -128,7 +132,12 @@ padding:0px;
   color: #fff;
 }
 
-  #home .overlay {
-      background-color: rgba(3, 3, 3, 0.4);
-      min-height: 600px;
-  }
+#home .overlay {
+    background-color: rgba(3, 3, 3, 0.4);
+    min-height: 600px;
+}
+
+/* Take uppercase conversion off of button text */
+.btn {
+  text-transform: unset !important;
+}
