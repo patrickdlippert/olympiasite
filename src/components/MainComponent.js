@@ -14,6 +14,7 @@ import ResourceCards from './ResourceCardsComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { ATTRACTIONS } from '../shared/attractions';
 import { RESTAURANTS } from '../shared/restaurants';
+import { EVENTS } from '../shared/events';
 import { RESOURCES } from '../shared/resources';
 import { PROMOTIONS } from '../shared/promotions';
 import ScrollToTop from './ScrollToTop';
@@ -26,7 +27,8 @@ class Main extends Component {
       attractions: ATTRACTIONS,
       restaurants: RESTAURANTS,
       resources: RESOURCES,
-      promotions: PROMOTIONS
+      promotions: PROMOTIONS,
+      events: EVENTS
     };
   }
 
@@ -50,6 +52,7 @@ class Main extends Component {
           <Route path='/home' component={HomePage} />
           <Route exact path='/attractions' render={() => <Guide attractions={this.state.attractions} />} />
           <Route exact path='/restaurants' render={() => <Guide attractions={this.state.restaurants} />} />
+          <Route exact path='/events' render={() => <Guide attractions={this.state.events} />} />
           <Redirect to='/home' /> 
         </Switch>
         <ResourceCards resources={this.state.resources} />

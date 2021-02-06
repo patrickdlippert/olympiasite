@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { MDBContainer, MDBBtn, MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter } from 'mdbreact';
+import  NameEmail  from './NameEmailComponent';
+
 
 class ModalPop extends Component {
 state = {
@@ -19,11 +21,11 @@ render() {
       <MDBModal isOpen={this.state.modal} toggle={this.toggle}>
         <MDBModalHeader toggle={this.toggle}>Contest Entry</MDBModalHeader>
         <MDBModalBody>
-          (...)
+          <NameEmail />
         </MDBModalBody>
         <MDBModalFooter>
           <MDBBtn color="secondary" onClick={this.toggle}>Close</MDBBtn>
-          <MDBBtn color="primary">Submit</MDBBtn>
+        {/*  <MDBBtn color="primary">Submit</MDBBtn> */}
         </MDBModalFooter>
       </MDBModal>
     </MDBContainer>

@@ -11,6 +11,7 @@ function AlternateHeaders({attraction}) {
             </div>
         );
     }
+
     return (            
         <div className="col col-md-7">
             <img className="d-flex mr-3 img-fluid" src={attraction.image} alt={attraction.name} />
@@ -26,6 +27,7 @@ function RenderGuideItem({attraction}) {
             <div className="col-md-5 text-left">
                 <MDBAnimation reveal type="zoomIn">
                     <h2>{attraction.name}</h2>
+                    <h5>{attraction.date}</h5>
                     <p className="d-sm-block">Rating:&nbsp;<span className="text-danger">{attraction.rating}</span> &nbsp;<RatingStars rating = {attraction.rating}  />
                     &nbsp;&nbsp;&nbsp;{attraction.price} - {attraction.type}</p>
                     <p>{attraction.description}</p>
