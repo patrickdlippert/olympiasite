@@ -29,7 +29,7 @@ export const RESOURCES = [
     },
     {
         id: 4,
-        name: 'WA Center For the Performing Arts',
+        name: 'Center For the Performing Arts',
         image: 'assets/images/resources/olympia5.jpg',
         description: "Located on the Nisqually River Delta in Southern Puget Sound, this refuge consists of three thousand acres of salt.",
         url: 'https://www.washingtoncenter.org/'

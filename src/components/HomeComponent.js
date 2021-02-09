@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
 import { MDBAnimation } from "mdbreact";
 import ModalPop from './ModalPopComponent';
+import CardCarousel from './CardCarouselComponent';
 
 
 function RenderCard({item}) {
@@ -19,6 +20,7 @@ function RenderCard({item}) {
 
 function Home(props) {
     return (
+        <>
         <div id="home">
             <div className="overlay">
                 <div className="container">
@@ -36,6 +38,8 @@ function Home(props) {
                 </div>
             </div>
         </div>
+        <CardCarousel resources={props.resources} />
+        </>
     );
 }
 

@@ -87,7 +87,7 @@ function CardCarousel(props) {
         
         return(
             <div className="container-fluid">
-                <div className="row text-center pt-2 pb-5">
+                <div className="row row-content text-center pt-2 pb-5">
                     <div className="col">
                         <RenderCards resources={props.resources} />
                     </div>

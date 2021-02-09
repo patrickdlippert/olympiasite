@@ -1,6 +1,7 @@
 import React from 'react';
 import { MDBAnimation } from "mdbreact";
 import RatingStars from "./RatingStarsComponent";
+import CardCarousel from './CardCarouselComponent';
 
 
 function AlternateHeaders({attraction}) {
@@ -52,11 +53,14 @@ function Guide(props) {
     });
 
     return (
+        <>
         <div className="container">
             <div className="row">
                 {guide}
             </div>
         </div>
+        <CardCarousel resources={props.resources} />
+        </>
     );
 
 }

@@ -14,6 +14,7 @@ import { ATTRACTIONS } from '../shared/attractions';
 import { RESTAURANTS } from '../shared/restaurants';
 import { EVENTS } from '../shared/events';
 import { RESOURCES } from '../shared/resources';
+import { SPONSORS } from '../shared/sponsors';
 import { PROMOTIONS } from '../shared/promotions';
 import ScrollToTop from './ScrollToTop';
 
@@ -25,6 +26,7 @@ class Main extends Component {
       attractions: ATTRACTIONS,
       restaurants: RESTAURANTS,
       resources: RESOURCES,
+      sponsors: SPONSORS,
       promotions: PROMOTIONS,
       events: EVENTS
     };
@@ -38,6 +40,7 @@ class Main extends Component {
       return (
         <Home 
           promotion={this.state.promotions.filter(promotion => promotion.featured)[0]}
+          resources={this.state.resources}
       />
       );
     }
@@ -48,12 +51,12 @@ class Main extends Component {
         <ScrollToTop />
         <Switch>
           <Route path='/home' component={HomePage} />
-          <Route exact path='/attractions' render={() => <Guide attractions={this.state.attractions} />} />
-          <Route exact path='/restaurants' render={() => <Guide attractions={this.state.restaurants} />} />
-          <Route exact path='/events' render={() => <Guide attractions={this.state.events} />} />
+          <Route exact path='/attractions' render={() => <Guide attractions={this.state.attractions} resources={this.state.sponsors}/>} />
+          <Route exact path='/restaurants' render={() => <Guide attractions={this.state.restaurants} resources={this.state.sponsors} />} />
+          <Route exact path='/events' render={() => <Guide attractions={this.state.events} resources={this.state.sponsors} />} />
           <Redirect to='/home' /> 
         </Switch>
-        <CardCarousel resources={this.state.resources} />
+       {/*} <CardCarousel resources={this.state.resources} /> {*/}
         <Footer />
       </div>
     );
