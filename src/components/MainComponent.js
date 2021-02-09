@@ -10,7 +10,7 @@ import Guide from './GuideComponent';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
 import Home from './HomeComponent.js';
-import ResourceCards from './ResourceCardsComponent';
+import CardCarousel from './CardCarouselComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { ATTRACTIONS } from '../shared/attractions';
 import { RESTAURANTS } from '../shared/restaurants';
@@ -55,7 +55,7 @@ class Main extends Component {
           <Route exact path='/events' render={() => <Guide attractions={this.state.events} />} />
           <Redirect to='/home' /> 
         </Switch>
-        <ResourceCards resources={this.state.resources} />
+          <CardCarousel resources={this.state.resources} />
         <Footer />
       </div>
     );

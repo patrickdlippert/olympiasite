@@ -1,16 +1,16 @@
 export const RESOURCES = [
     {
         id: 0,
-        name: 'Thurston County Chamber of Commerce',
+        name: 'Chamber of Commerce',
         image: 'assets/images/olympia1.jpg',
-        description: "Located on the Nisqually River Delta in Southern Puget Sound, this refuge consists of three thousand acres of salt.",
+        description: "Official site of the Chamber of Commerce.",
         url: 'https://thurstonchamber.com/'
     },
     {
         id: 1,
         name: 'City of Olympia',
         image: 'assets/images/olympia2.jpg',
-        description: "Located on the Nisqually River Delta in Southern Puget Sound, this refuge consists of three thousand acres of salt.",
+        description: "The official site of the city of Olympia.",
         url: 'https://olympiawa.gov/visitors.aspx'
     },
     {
@@ -22,45 +22,38 @@ export const RESOURCES = [
     },
     {
         id: 3,
-        name: 'Thurston County Chamber of Commerce',
-        image: 'assets/images/olympia1.jpg',
-        description: "Located on the Nisqually River Delta in Southern Puget Sound, this refuge consists of three thousand acres of salt.",
-        url: 'https://thurstonchamber.com/'
+        name: 'Olympia Historical Society',
+        image: 'assets/images/olympia4.jpg',
+        description: "Non-profit organization presenting the stories from our past to enrich the present and inform the future of Olympia.",
+        url: 'https://olympiahistory.org/'
     },
     {
         id: 4,
-        name: 'City of Olympia',
-        image: 'assets/images/olympia2.jpg',
+        name: 'WA Center For the Performing Arts',
+        image: 'assets/images/olympia5.jpg',
         description: "Located on the Nisqually River Delta in Southern Puget Sound, this refuge consists of three thousand acres of salt.",
-        url: 'https://olympiawa.gov/visitors.aspx'
+        url: 'https://www.washingtoncenter.org/'
     },
     {
         id: 5,
-        name: 'Group Tours of Olympia',
-        image: 'assets/images/olympia3.jpg',
-        description: "Plan a personalized tour of the Olympia area with a professional tour guide,",
-        url: 'https://www.experienceolympia.com/groups/'
+        name: 'Lodging in Olympia',
+        image: 'assets/images/olympia6.jpg',
+        description: "Book your stay at one of Olympia's fantastic hotels.",
+        url: 'https://www.tripadvisor.com/Hotels-g58653-Olympia_Washington-Hotels.html'
     },
     {
         id: 6,
-        name: 'Thurston County Chamber of Commerce',
-        image: 'assets/images/olympia1.jpg',
+        name: 'Olympia Weather Forecast',
+        image: 'assets/images/olympia7.jpg',
         description: "Located on the Nisqually River Delta in Southern Puget Sound, this refuge consists of three thousand acres of salt.",
-        url: 'https://thurstonchamber.com/'
+        url: 'https://weather.com/weather/tenday/l/Olympia+WA+USWA0318:1:US'
     },
     {
         id: 7,
-        name: 'City of Olympia',
-        image: 'assets/images/olympia2.jpg',
-        description: "Located on the Nisqually River Delta in Southern Puget Sound, this refuge consists of three thousand acres of salt.",
-        url: 'https://olympiawa.gov/visitors.aspx'
+        name: 'Concerts near Olympia',
+        image: 'assets/images/olympia8.jpg',
+        description: "Check out the calendar of upcoming musical events.",
+        url: 'http://calendar.theolympian.com/events.aspx?et=1&title=Music'
     },
-    {
-        id: 8,
-        name: 'Group Tours of Olympia',
-        image: 'assets/images/olympia3.jpg',
-        description: "Plan a personalized tour of the Olympia area with a professional tour guide,",
-        url: 'https://www.experienceolympia.com/groups/'
-    }
 ]
       

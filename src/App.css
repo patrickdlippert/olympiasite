@@ -25,11 +25,18 @@ h1, h2, h3, h4, h5, .card-body>.card-title {
 
   .card-title {
     color: black;
+      font-weight: 500;
+      font-size: 1.25rem;
 
   }
   .card-body {
     color: rgba(0, 0, 0, 0.5);
    }
+
+  .card-img-overlay .card-title {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
 
   .row__posters {
     display: flex;
@@ -45,7 +52,7 @@ h1, h2, h3, h4, h5, .card-body>.card-title {
   .row__poster {
     width: 100%;
     object-fit: contain;
-    max-height: 100px;
+ 
     margin-right: 10px;
     transition: transform 450ms;
   }
@@ -141,3 +148,4 @@ padding:0px;
 .btn {
   text-transform: unset !important;
 }
+
