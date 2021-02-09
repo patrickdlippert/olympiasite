@@ -54,6 +54,6 @@ export const RESOURCES = [
         image: 'assets/images/resources/olympia8.jpg',
         description: "Check out the calendar of upcoming musical events.",
         url: 'http://calendar.theolympian.com/events.aspx?et=1&title=Music'
-    },
+    }
 ]
       

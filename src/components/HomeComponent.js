@@ -24,8 +24,8 @@ function Home(props) {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-8 align-items-center">
-                        <MDBAnimation reveal type="tada">
-                            <img className="d-flex img-fluid" src="assets/images/topten.png" alt="Olympia Logo" />
+                            <MDBAnimation reveal type="tada">
+                                <img className="d-flex img-fluid" src="assets/images/topten.png" alt="Olympia Logo" />
                             </MDBAnimation>
                             <h1 className="text-center">The absolute best of Olympia!</h1>
                         </div>

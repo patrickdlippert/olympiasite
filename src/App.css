@@ -120,3 +120,6 @@ padding:0px;
   text-transform: unset !important;
 }
 
+.slick-prev:before, .slick-next:before {
+  color: #000000;
+}

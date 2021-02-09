@@ -12,15 +12,13 @@ import "slick-carousel/slick/slick-theme.css";
 function ConstructCard({resource}) {
     if( {resource} ) {
         return(
-            <Card className="text-center p-1 flex-fill">
+            <Card className="p-1">
                 <a target="_blank:" href={resource.url}>
                 <CardImg src={resource.image} alt={resource.name} title={resource.description}/>
                 <CardImgOverlay>
                     <CardTitle>{resource.name}</CardTitle>
-
                 </CardImgOverlay>
                 </a>
-
             </Card>
         );
     }
@@ -39,6 +37,7 @@ function RenderCards({resources}) {
     const settings = {
         autoplay: true,
         dots: true,
+        arrows: true,
         infinite: true,
         speed: 500,
         slidesToShow: 4,
@@ -72,7 +71,7 @@ function RenderCards({resources}) {
     
       };
       return (
-        <div>
+        <div className="m-3">
           <Slider {...settings}>
               {cardslide}
           </Slider>

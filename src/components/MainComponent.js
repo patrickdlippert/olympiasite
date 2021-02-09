@@ -53,7 +53,7 @@ class Main extends Component {
           <Route exact path='/events' render={() => <Guide attractions={this.state.events} />} />
           <Redirect to='/home' /> 
         </Switch>
-          <CardCarousel resources={this.state.resources} />
+        <CardCarousel resources={this.state.resources} />
         <Footer />
       </div>
     );

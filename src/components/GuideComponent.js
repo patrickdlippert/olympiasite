@@ -6,7 +6,7 @@ import RatingStars from "./RatingStarsComponent";
 function AlternateHeaders({attraction}) {
     if ((attraction.id % 2)) {
         return (            
-            <div className="col col-md-7 order-sm-last">
+            <div className="col col-md-7 order-md-last">
                 <img className="d-flex mr-3 img-fluid" src={attraction.image} alt={attraction.name} />
             </div>
         );
