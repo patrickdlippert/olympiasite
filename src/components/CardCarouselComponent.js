@@ -14,7 +14,7 @@ function ConstructCard({resource}) {
         return(
             <Card className="text-center p-1 flex-fill">
                 <a target="_blank:" href={resource.url}>
-                <CardImg className=" row__poster" src={resource.image} alt={resource.name} title={resource.description}/>
+                <CardImg src={resource.image} alt={resource.name} title={resource.description}/>
                 <CardImgOverlay>
                     <CardTitle>{resource.name}</CardTitle>
 

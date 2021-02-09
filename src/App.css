@@ -38,36 +38,6 @@ h1, h2, h3, h4, h5, .card-body>.card-title {
     background-color: rgba(0, 0, 0, 0.5);
   }
 
-  .row__posters {
-    display: flex;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    padding: 20px;
-  }
-  
-  .row__posters::-webkit-scrollbar {
-    display: none;
-  }
-  
-  .row__poster {
-    width: 100%;
-    object-fit: contain;
- 
-    margin-right: 10px;
-    transition: transform 450ms;
-  }
-  
-  .row__posterLarge {
-    max-height: 250px;
-  }
-  
-  .row__posterLarge:hover {
-    transform: scale(1.09);
-  }
-  
-  .row__poster:hover {
-    transform: scale(1.08);
-  }
 
   /*==============================
 NAVBAR STYLES
@@ -113,6 +83,7 @@ padding:0px;
   -moz-transition: background .8s ease-out,padding .8s ease-out;
   transition: background .8s ease-out,padding .8s ease-out;
 }
+
 /* CLASS FOR REMOVING PADDING IN NAVBAR*/
 .navbar-pad-original {
   padding: 0px;

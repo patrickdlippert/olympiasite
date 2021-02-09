@@ -3,9 +3,7 @@ import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
 
 
-
 import React, { Component } from 'react';
-import { MDBAnimation } from "mdbreact";
 import Guide from './GuideComponent';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
