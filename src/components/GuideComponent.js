@@ -8,16 +8,26 @@ function AlternateHeaders({attraction}) {
     if ((attraction.id % 2)) {
         return (            
             <div className="col col-md-7 px-4 order-md-last">
-                <img className="d-flex mr-3 img-fluid" src={attraction.image} alt={attraction.name} />
+                <div className="image-container">
+                    <img className="overlay-image d-flex mr-3 img-fluid"  src={attraction.image} alt={attraction.name} />
+                    <div className="overlay-text">
+                        <a href='#'><span className="fa fa-image"> more images </span></a>
+                    </div>
+                </div>
             </div>
         );
     }
 
     return (            
         <div className="col col-md-7 px-4">
-            <img className="d-flex mr-3 img-fluid" src={attraction.image} alt={attraction.name} />
-        </div>
-    );
+            <div className="image-container">
+                <img className="d-flex mr-3 img-fluid" src={attraction.image} alt={attraction.name} />
+                <div className="overlay-text">
+                        <a href='#'><span className="fa fa-image"> more images </span></a>
+                    </div>
+                </div>
+            </div>
+        );
 }
 
 function RenderGuideItem({attraction}) {

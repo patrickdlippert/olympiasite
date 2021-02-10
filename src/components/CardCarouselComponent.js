@@ -12,7 +12,7 @@ import "slick-carousel/slick/slick-theme.css";
 function ConstructCard({resource}) {
     if( {resource} ) {
         return(
-            <Card className="p-1">
+            <Card className="card_thumbnail p-1">
                 <a target="_blank:" href={resource.url}>
                 <CardImg src={resource.image} alt={resource.name} title={resource.description}/>
                 <CardImgOverlay>

@@ -115,11 +115,53 @@ padding:0px;
     min-height: 600px;
 }
 
+/* Make the carousel thumbnails pop on hover */
+.card_thumbnail {
+  width: 100%;
+  object-fit: contain;
+  transition: transform 450ms;
+}
+.card_thumbnail:hover {
+  transform: scale(1.08);
+}
+
+
+
 /* Take uppercase conversion off of button text */
 .btn {
   text-transform: unset !important;
 }
 
+/* Put black behind the prev/next buttons in slick carousel */
 .slick-prev:before, .slick-next:before {
   color: #000000;
 }
+
+
+/* Style image number overlay for Guide pages */
+
+.image-container {
+  position: relative; 
+  width:100%;
+}
+
+/* Original image */
+.image-container .overlay-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+/* Original text overlay */
+.image-container .overlay-text {
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.5em;
+  text-shadow: 2px 2px 2px #000;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  /* transform: translate(0%, -50%); */
+  width: 100%;
+} 

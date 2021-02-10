@@ -6,15 +6,15 @@ const NameEmail = (props) => {
     <Form>
 
       <FormGroup  className="text-left">
-        <Label for="yourFirstName">First Name</Label>
+        <Label htmlFor="yourFirstName">First Name</Label>
         <Input type="text" name="firstName" id="yourFirstName" placeholder="First" />
       </FormGroup>
       <FormGroup  className="text-left">
-        <Label for="yourLastName">Last Name</Label>
+        <Label htmlFor="yourLastName">Last Name</Label>
         <Input type="text" name="firstName" id="yourLastName" placeholder="Last" />
       </FormGroup>
       <FormGroup  className="text-left">
-        <Label for="yourEmail">Email</Label>
+        <Label htmlFor="yourEmail">Email</Label>
         <Input type="email" name="email" id="yourEmail" placeholder="name@company.com" />
       </FormGroup>
       <FormGroup className="text-left" check>
@@ -23,7 +23,7 @@ const NameEmail = (props) => {
           Yes, I’m 21 years or older. I have read and agree to the Official Rules.
         </Label>
       </FormGroup>
-      <Button color="primary">Submit</Button>
+      <Button type="submit" color="primary">Submit</Button>
     </Form>
   );
 }
