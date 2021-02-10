@@ -7,14 +7,14 @@ import CardCarousel from './CardCarouselComponent';
 function AlternateHeaders({attraction}) {
     if ((attraction.id % 2)) {
         return (            
-            <div className="col col-md-7 order-md-last">
+            <div className="col col-md-7 px-4 order-md-last">
                 <img className="d-flex mr-3 img-fluid" src={attraction.image} alt={attraction.name} />
             </div>
         );
     }
 
     return (            
-        <div className="col col-md-7">
+        <div className="col col-md-7 px-4">
             <img className="d-flex mr-3 img-fluid" src={attraction.image} alt={attraction.name} />
         </div>
     );
@@ -25,7 +25,7 @@ function RenderGuideItem({attraction}) {
         <React.Fragment>
             <AlternateHeaders attraction={attraction}/>
 
-            <div className="col-md-5 text-left">
+            <div className="col-md-5 text-left px-4">
                 <MDBAnimation reveal type="zoomIn">
                     <h2>{attraction.name}</h2>
                     <h5>{attraction.date}</h5>
