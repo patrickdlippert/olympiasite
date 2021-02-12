@@ -1,14 +1,8 @@
-import '@fortawesome/fontawesome-free/css/all.min.css';
-import 'bootstrap-css-only/css/bootstrap.min.css';
-import 'mdbreact/dist/css/mdb.css';
-
-
 import React, { Component } from 'react';
 import Guide from './GuideComponent';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
 import Home from './HomeComponent.js';
-import CardCarousel from './CardCarouselComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { ATTRACTIONS } from '../shared/attractions';
 import { RESTAURANTS } from '../shared/restaurants';
@@ -17,7 +11,6 @@ import { RESOURCES } from '../shared/resources';
 import { SPONSORS } from '../shared/sponsors';
 import { PROMOTIONS } from '../shared/promotions';
 import ScrollToTop from './ScrollToTop';
-
 
 class Main extends Component {
   constructor(props) {
@@ -32,8 +25,6 @@ class Main extends Component {
     };
   }
 
-
-
   render() {
 
     const HomePage = () => {
@@ -41,7 +32,7 @@ class Main extends Component {
         <Home 
           promotion={this.state.promotions.filter(promotion => promotion.featured)[0]}
           resources={this.state.resources}
-      />
+        />
       );
     }
 
@@ -56,7 +47,6 @@ class Main extends Component {
           <Route exact path='/events' render={() => <Guide attractions={this.state.events} resources={this.state.sponsors} />} />
           <Redirect to='/home' /> 
         </Switch>
-       {/*} <CardCarousel resources={this.state.resources} /> {*/}
         <Footer />
       </div>
     );

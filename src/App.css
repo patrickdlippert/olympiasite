@@ -1,4 +1,8 @@
 
+body {
+  font-family: 'Lato', sans-serif;
+
+}
 h1, h2, h3, h4, h5, .card-body>.card-title {
   font-family: 'Fredoka One', cursive;
 }
@@ -39,14 +43,18 @@ h1, h2, h3, h4, h5, .card-body>.card-title {
   }
 
 
-  /*==============================
+/*==============================
 NAVBAR STYLES
 ==============================*/
 
 .navbar-brand {
 padding:0px;
-
 }
+
+.navbar-brand:hover {
+  transform: scale(1.1);
+}
+
 .navbar-brand img {
     height:50px;
 }
@@ -73,9 +81,9 @@ padding:0px;
 }
 
 .navbar-default {
-  background-color: rgb(254, 102, 196);
   border-color: transparent;
 }
+
 /* ADDED PADDING IN NAVBAR */
 .navbar {
   padding: 15px;
@@ -138,30 +146,47 @@ padding:0px;
 }
 
 
-/* Style image number overlay for Guide pages */
+/* Classes for Guide Images that have a purple triangle in the image corner */
 
+/* Container holding the image and the text */
 .image-container {
-  position: relative; 
-  width:100%;
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
-/* Original image */
-.image-container .overlay-image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-
-/* Original text overlay */
-.image-container .overlay-text {
-  color: #fff;
-  font-size: 20px;
-  line-height: 1.5em;
-  text-shadow: 2px 2px 2px #000;
+/* Top right triangle */
+.top-right-triangle {
+  width: 0;
+  height: 0;
+  border-top: 100px solid #9020d1bb;
+  border-left: 100px solid transparent;
   position: absolute;
-  top: 5%;
-  left: 5%;
-  /* transform: translate(0%, -50%); */
-  width: 100%;
-} 
+  top: 0px;
+  right: 0px;
+}
+
+/* Top left triangle */
+.top-left-triangle {
+  width: 0;
+  height: 0;
+  border-top: 100px solid #9020d1bb;
+  border-right: 100px solid transparent;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+/* Top right text that is displayed ontop of triangle */
+.top-right-text {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Top left text that is displayed ontop of triangle */
+.top-left-text {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}

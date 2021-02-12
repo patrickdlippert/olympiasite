@@ -10,6 +10,7 @@ import "slick-carousel/slick/slick-theme.css";
 import App from './App';
 
 import "@fontsource/fredoka-one"; // Defaults to weight 400.
+import "typeface-lato";
 import 'font-awesome/css/font-awesome.css';
 import 'bootstrap-social/bootstrap-social.css';
 

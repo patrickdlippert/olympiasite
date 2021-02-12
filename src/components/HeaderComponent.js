@@ -41,10 +41,10 @@ class Header extends Component {
                 
                 <Navbar dark sticky="top" color="primary" expand="md" className="navbar-default">
                     <div className="container">
-                        <NavbarBrand className="mr-auto" href="/"><img className="img-fluid" src="assets/images/OlympiaTenOval.png" alt="Olympia Logo"></img></NavbarBrand>
+                        <NavbarBrand className="mr-auto" href="/"><img className="img-fluid" src="assets/images/OlympiaTenOval.png" alt="Olympia Logo" /></NavbarBrand>
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
-                                <Nav navbar className="ml-auto">
+                                <Nav navbar className="ml-auto navbar-nav">
                                     <NavItem>
                                         <NavLink className="nav-link" to="/home">HOME</NavLink>
                                     </NavItem>

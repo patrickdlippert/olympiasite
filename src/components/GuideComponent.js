@@ -7,11 +7,19 @@ import CardCarousel from './CardCarouselComponent';
 function AlternateHeaders({attraction}) {
     if ((attraction.id % 2)) {
         return (            
-            <div className="col col-md-7 px-4 order-md-last">
+            <div className="col col-md-7 col-xl-6 px-4 order-md-last">
                 <div className="image-container">
-                    <img className="overlay-image d-flex mr-3 img-fluid"  src={attraction.image} alt={attraction.name} />
-                    <div className="overlay-text">
-                        <a href='#'><span className="fa fa-image"> more images </span></a>
+                    <img className="d-flex mr-3 img-fluid"  src={attraction.image} alt={attraction.name} />
+                    <div className="top-left-triangle"></div>
+                    <div className="top-left-text">
+
+                        <span className="fa-stack">
+                            <span className="fa fa-circle-o fa-stack-2x"></span>
+                            <strong className="fa-stack-1x">
+                                {attraction.id+1}
+                            </strong>
+                        </span>
+                        
                     </div>
                 </div>
             </div>
@@ -19,15 +27,23 @@ function AlternateHeaders({attraction}) {
     }
 
     return (            
-        <div className="col col-md-7 px-4">
+        <div className="col col-md-7 col-xl-6 px-4">
             <div className="image-container">
                 <img className="d-flex mr-3 img-fluid" src={attraction.image} alt={attraction.name} />
-                <div className="overlay-text">
-                        <a href='#'><span className="fa fa-image"> more images </span></a>
+                <div className="top-right-triangle"></div>
+                    <div className="top-right-text">
+
+                        <span className="fa-stack">
+                            <span className="fa fa-circle-o fa-stack-2x"></span>
+                            <strong className="fa-stack-1x">
+                                {attraction.id+1}
+                            </strong>
+                        </span>
+                        
                     </div>
                 </div>
             </div>
-        );
+    );
 }
 
 function RenderGuideItem({attraction}) {
@@ -35,7 +51,7 @@ function RenderGuideItem({attraction}) {
         <React.Fragment>
             <AlternateHeaders attraction={attraction}/>
 
-            <div className="col-md-5 text-left px-4">
+            <div className="col-md-5 col-xl-6 text-left px-4">
                 <MDBAnimation reveal type="zoomIn">
                     <h2>{attraction.name}</h2>
                     <h5>{attraction.date}</h5>

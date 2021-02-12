@@ -3,8 +3,8 @@ import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
 
 import React, { Component } from 'react';
-import Main from './components/MainComponent';
 import { BrowserRouter } from 'react-router-dom'
+import Main from './components/MainComponent';
 import './App.css';
 
 
