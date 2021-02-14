@@ -243,7 +243,44 @@ export const ATTRACTIONS = [
         address: "12315 Waddell Creek Rd SW, Olympia, WA 98512",
         type:"Park",
         price: "Free",
-        description: "These mysterious mounds inspire imagination and speculation among visitors. With a half-mile ADA accessible path and another two miles of more rugged wandering, the Mima Mounds are a great destination for many hikers. Just what created these odd, bubble-like mounds southwest of Olympia is a mystery. And this puzzle is one with proposed answers ranging from giant gophers to earthquakes and glaciation, as well as extraterrestrial activity. Whatever the answer, the Mima Mounds Natural Area Preserve is a great place for walking or hiking, particularly in the spring when the wildflowers are in bloom on the rolling hills."
+        description: "These mysterious mounds inspire imagination and speculation among visitors. With a half-mile ADA accessible path and another two miles of more rugged wandering, the Mima Mounds are a great destination for many hikers. Just what created these odd, bubble-like mounds southwest of Olympia is a mystery. And this puzzle is one with proposed answers ranging from giant gophers to earthquakes and glaciation, as well as extraterrestrial activity. Whatever the answer, the Mima Mounds Natural Area Preserve is a great place for walking or hiking, particularly in the spring when the wildflowers are in bloom on the rolling hills.",
+        photos: [
+            {
+              src: "../assets/images/attractions/gallery/mima-mounds-0.jpg",
+              width: 16,
+              height: 9
+            },
+            {
+              src: "../assets/images/attractions/gallery/mima-mounds-1.jpg",
+              width: 1,
+              height: 1
+            },
+            {
+              src: "../assets/images/attractions/gallery/mima-mounds-2.jpg",
+              width: 4,
+              height: 3
+            },
+            {
+              src: "../assets/images/attractions/gallery/mima-mounds-3.jpg",
+              width: 17,
+              height: 5
+            },
+            {
+              src: "../assets/images/attractions/gallery/mima-mounds-4.jpg",
+              width: 16,
+              height: 9
+            },
+            {
+              src: "../assets/images/attractions/gallery/mima-mounds-5.jpg",
+              width: 1,
+              height: 1
+            },
+            {
+              src: "../assets/images/attractions/gallery/mima-mounds-6.jpg",
+              width: 4,
+              height: 3
+            }
+          ]
     },
     {
         id: 9,

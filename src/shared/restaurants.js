@@ -161,7 +161,34 @@ export const RESTAURANTS = [
         address: "507 Capitol Way S #A, Olympia, WA 98501",
         type: "Italian",
         price: "$$$",
-        description: "Italian, untranslated. Basilico embraces the slow food movement, bringing old world recipes and traditional preparations to Olympia. All pasta and ravioli are made by hand and sauces cook for 3-4 hours. At Basilico, they take time and pride in preparing the closest thing to current cuisine in Italy as possible. It's a quaint, high-end restaurant with a gluten-free menu, handmade Northern Italian dishes & regional wines. Popular dishes are: Lamb Ravioli, Rack of Lamb, Pappardelle Al Cinghiale, and Asparagus Ravioli. An authentic get-away in the heart of downtown Olympia!"
+        description: "Italian, untranslated. Basilico embraces the slow food movement, bringing old world recipes and traditional preparations to Olympia. All pasta and ravioli are made by hand and sauces cook for 3-4 hours. At Basilico, they take time and pride in preparing the closest thing to current cuisine in Italy as possible. It's a quaint, high-end restaurant with a gluten-free menu, handmade Northern Italian dishes & regional wines. Popular dishes are: Lamb Ravioli, Rack of Lamb, Pappardelle Al Cinghiale, and Asparagus Ravioli. An authentic get-away in the heart of downtown Olympia!",
+        photos: [
+          {
+            src: "../assets/images/restaurants/gallery/basilico-ristorante-0.jpg",
+            width: 4,
+            height: 3
+          },
+          {
+            src: "../assets/images/restaurants/gallery/basilico-ristorante-1.jpg",
+            width: 5,
+            height: 3
+          },
+          {
+            src: "../assets/images/restaurants/gallery/basilico-ristorante-2.jpg",
+            width: 4,
+            height: 3
+          },
+          {
+            src: "../assets/images/restaurants/gallery/basilico-ristorante-3.jpg",
+            width: 5,
+            height: 4
+          },
+          {
+            src: "../assets/images/restaurants/gallery/basilico-ristorante-4.jpg",
+            width: 4,
+            height: 3
+          }
+        ]
     },
     {
         id: 6,
@@ -181,7 +208,39 @@ export const RESTAURANTS = [
         address: "2100 W Bay Dr NW, Olympia, WA 98502",
         type: "American",
         price: "$$",
-        description: "American Casual Dining on the Waterfront! Something for everyone & everyone is family. If you want to go where the staff remember your name, go here! Since 1999, Tugboat Annie's has been Olympia's fun place to look out onto the Great Pacific Northwest. Like Olympia itself, it's a pretty casual place, a great place for family and friends. Popular dishes: Fish & Chips, Crab Melt, Jambalaya, Fried Oysters and Prime Rib."
+        description: "American Casual Dining on the Waterfront! Something for everyone & everyone is family. If you want to go where the staff remember your name, go here! Since 1999, Tugboat Annie's has been Olympia's fun place to look out onto the Great Pacific Northwest. Like Olympia itself, it's a pretty casual place, a great place for family and friends. Popular dishes: Fish & Chips, Crab Melt, Jambalaya, Fried Oysters and Prime Rib.",
+        photos: [
+          {
+            src: "../assets/images/restaurants/gallery/tugboat-annies-0.jpg",
+            width: 4,
+            height: 3
+          },
+          {
+            src: "../assets/images/restaurants/gallery/tugboat-annies-1.jpg",
+            width: 3,
+            height: 4
+          },
+          {
+            src: "../assets/images/restaurants/gallery/tugboat-annies-2.jpg",
+            width: 5,
+            height: 3
+          },
+          {
+            src: "../assets/images/restaurants/gallery/tugboat-annies-3.jpg",
+            width: 3,
+            height: 4
+          },
+          {
+            src: "../assets/images/restaurants/gallery/tugboat-annies-4.jpg",
+            width: 4,
+            height: 3
+          },
+          {
+            src: "../assets/images/restaurants/gallery/tugboat-annies-5.jpg",
+            width: 4,
+            height: 3
+          }
+        ]
     },
     {
         id: 8,

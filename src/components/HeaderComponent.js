@@ -32,7 +32,7 @@ class Header extends Component {
                             </div>
                             <div className="col-sm-6">
                                 <MDBAnimation reveal type="fadeInRight">
-                                    <h5 className="d-sm-block">Explore the top ten attractions in Olympia, WA!</h5>
+                                    <h5 className="d-sm-block">Explore the top highlights of Olympia, WA!</h5>
                                 </MDBAnimation>
                             </div>                
                         </div>
