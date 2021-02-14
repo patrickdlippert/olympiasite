@@ -1,64 +1,58 @@
 import React from 'react';
+import { Button } from 'reactstrap';
 import { MDBAnimation } from "mdbreact";
+import { Link } from 'react-router-dom';
 import RatingStars from "./RatingStarsComponent";
 import CardCarousel from './CardCarouselComponent';
 
 
-function AlternateHeaders({attraction}) {
-    if ((attraction.id % 2)) {
-        return (            
-            <div className="col col-md-7 col-xl-6 px-4 order-md-last">
-                <div className="image-container">
-                    <img className="d-flex mr-3 img-fluid"  src={attraction.image} alt={attraction.name} />
-                    <div className="top-left-triangle"></div>
-                    <div className="top-left-text">
+function RenderGuideItem({category, highlight}) {
 
-                        <span className="fa-stack">
-                            <span className="fa fa-circle-o fa-stack-2x"></span>
-                            <strong className="fa-stack-1x">
-                                {attraction.id+1}
-                            </strong>
-                        </span>
-                        
-                    </div>
-                </div>
-            </div>
-        );
-    }
+    // This function creates an image gallery link using react-router only if there's a photos oject 
+    // within the provided highlight object
+    const CreateImageLink = ({ category, highlight }) => {
+        if(highlight.photos) {
+        return (
+            <Link to={`/${category}/${highlight.id}`}>
+                <Button color="primary" size="sm"><i class="fas fa-image"></i> more</Button>
+            </Link>
+        );}
+        return <span />
+         
+    };
 
-    return (            
-        <div className="col col-md-7 col-xl-6 px-4">
-            <div className="image-container">
-                <img className="d-flex mr-3 img-fluid" src={attraction.image} alt={attraction.name} />
-                <div className="top-right-triangle"></div>
-                    <div className="top-right-text">
-
-                        <span className="fa-stack">
-                            <span className="fa fa-circle-o fa-stack-2x"></span>
-                            <strong className="fa-stack-1x">
-                                {attraction.id+1}
-                            </strong>
-                        </span>
-                        
-                    </div>
-                </div>
-            </div>
-    );
-}
-
-function RenderGuideItem({attraction}) {
     return (
         <React.Fragment>
-            <AlternateHeaders attraction={attraction}/>
 
+           {/* Dynamically alternate images left and right by adding "order-md-last" to odd highlight IDs and 
+               also place a numbered purple triangle on the side of the image that is closest to the text */}
+
+            <div className={`col col-md-7 col-xl-6 px-4 ${(highlight.id % 2) ? 'order-md-last' : ''}`} >
+                <div className="image-container">
+                    <img className="d-flex mr-3 img-fluid" src={highlight.image} alt={highlight.name} />
+                    <div className={`${(highlight.id % 2) ? 'top-left-triangle' : 'top-right-triangle'}`}></div>
+                    <div className={`${(highlight.id % 2) ? 'top-left-text' : 'top-right-text'}`}>
+                        {/* Stacked fontawesome icon of a number ontop of a circle */}
+                        <span className="fa-stack">
+                            <span className="fa fa-circle-o fa-stack-2x"></span>
+                            <strong className="fa-stack-1x">
+                                {highlight.id+1}
+                            </strong>
+                        </span>
+                    </div>
+                    <CreateImageLink category={category} highlight={highlight} />
+                </div>
+            </div>
+
+            {/* Create a simple text column using name, date (if one exists), rating, price, type, description and address from the highlight item. Also generate a gold star icon array for a visual represenation of the rating. The MDBAnimation component makes the text block "zoom in" to its location in the column. */}
             <div className="col-md-5 col-xl-6 text-left px-4">
                 <MDBAnimation reveal type="zoomIn">
-                    <h2>{attraction.name}</h2>
-                    <h5>{attraction.date}</h5>
-                    <p className="d-sm-block">Rating:&nbsp;<span className="text-danger">{attraction.rating}</span> &nbsp;<RatingStars rating = {attraction.rating}  />
-                    &nbsp;&nbsp;&nbsp;{attraction.price} - {attraction.type}</p>
-                    <p>{attraction.description}</p>
-                    <p>Address: {attraction.address}</p>
+                    <h2>{highlight.name}</h2>
+                    <h5>{highlight.date}</h5>
+                    <p className="d-sm-block">Rating:&nbsp;<span className="text-danger">{highlight.rating}</span> &nbsp;<RatingStars rating = {highlight.rating}  />
+                    &nbsp;&nbsp;&nbsp;{highlight.price} - {highlight.type}</p>
+                    <p>{highlight.description}</p>
+                    <p>Address: {highlight.address}</p>
                 </MDBAnimation>
             </div>
         </React.Fragment>
@@ -66,14 +60,12 @@ function RenderGuideItem({attraction}) {
 }
 
 
-
-
 function Guide(props) {
 
-    const guide = props.attractions.map(attraction => {
+    const guide = props.highlights.map(highlight => {
         return (
-            <div key={attraction.id} className="row row-content align-items-center">
-                <RenderGuideItem attraction={attraction} />
+            <div key={highlight.id} className="row row-content align-items-center">
+                <RenderGuideItem category={props.category} highlight={highlight} />
             </div>
         );
     });

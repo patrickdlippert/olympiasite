@@ -180,13 +180,13 @@ padding:0px;
 /* Top right text that is displayed ontop of triangle */
 .top-right-text {
   position: absolute;
-  top: 8px;
+  top: 12px;
   right: 16px;
 }
 
 /* Top left text that is displayed ontop of triangle */
 .top-left-text {
   position: absolute;
-  top: 8px;
+  top: 12px;
   left: 16px;
 }

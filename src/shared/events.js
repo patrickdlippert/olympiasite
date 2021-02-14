@@ -9,7 +9,59 @@ export const EVENTS = [
         price: "Free",
         url: 'https://www.harbordays.com/',
         date: 'Sept 3-5',
-        description: 'Olympia Harbor Days is an annual non-profit festival, celebrates the return of the vintage tugboats of the Puget Sound to Olympia for three days of entertainment, food, art, history and a last farewell to summer. Vintage tugboats, retired or working, are moored at Olympia’s Percival Landing where you can Tour the Tugs on Saturday. Be on hand Sunday as the tugs leave shore at noon to participate in the annual World’s Largest Vintage Tugboat Races & Show! The tugs race the deep channel of Budd Bay near Butler Cove.'
+        description: 'Olympia Harbor Days is an annual non-profit festival, celebrates the return of the vintage tugboats of the Puget Sound to Olympia for three days of entertainment, food, art, history and a last farewell to summer. Vintage tugboats, retired or working, are moored at Olympia’s Percival Landing where you can Tour the Tugs on Saturday. Be on hand Sunday as the tugs leave shore at noon to participate in the annual World’s Largest Vintage Tugboat Races & Show! The tugs race the deep channel of Budd Bay near Butler Cove.',
+        photos: [
+          {
+            src: "../assets/images/events/gallery/harbor-days-0.png",
+            width: 1,
+            height: 1
+          },
+          {
+            src: "../assets/images/events/gallery/harbor-days-1.jpg",
+            width: 3,
+            height: 2
+          },
+          {
+            src: "../assets/images/events/gallery/harbor-days-2.jpg",
+            width: 3,
+            height: 2
+          },
+          {
+            src: "../assets/images/events/gallery/harbor-days-3.jpg",
+            width: 3,
+            height: 2
+          },
+          {
+            src: "../assets/images/events/gallery/harbor-days-4.jpg",
+            width: 2,
+            height: 3
+          },
+          {
+            src: "../assets/images/events/gallery/harbor-days-5.jpg",
+            width: 16,
+            height: 9
+          },
+          {
+            src: "../assets/images/events/gallery/harbor-days-6.jpg",
+            width: 4,
+            height: 3
+          },
+          {
+            src: "../assets/images/events/gallery/harbor-days-7.jpg",
+            width: 3,
+            height: 2
+          },
+          {
+            src: "../assets/images/events/gallery/harbor-days-8.jpg",
+            width: 4,
+            height: 3
+          },
+          {
+            src: "../assets/images/events/gallery/harbor-days-9.jpg",
+            width: 16,
+            height: 9
+          }
+        ]
     },
     {
         id: 1,
@@ -21,7 +73,59 @@ export const EVENTS = [
         price: "$$",
         url: 'https://www.thurstoncountywa.gov/fair',
         date: "Aug 4 - Aug 8",
-        description: "The Thurston County Fair was first held in 1871 with the intention of helping farmers and agriculture and, over a hundred years later, is still going strong. The annual event features multiple days of family-friendly fun and entertainment including live music, a carnival, a 4-H Fashion Revue, a Kids Pedal Tractor Pull, Irish Dancers and Cloggers, taiko drum performances, wildlife education and more. There’s also a delicious assortment of fare foods and locally crafted beer, cider and wine."
+        description: "The Thurston County Fair was first held in 1871 with the intention of helping farmers and agriculture and, over a hundred years later, is still going strong. The annual event features multiple days of family-friendly fun and entertainment including live music, a carnival, a 4-H Fashion Revue, a Kids Pedal Tractor Pull, Irish Dancers and Cloggers, taiko drum performances, wildlife education and more. There’s also a delicious assortment of fare foods and locally crafted beer, cider and wine.",
+        photos: [
+          {
+            src: "../assets/images/events/gallery/thurstonco-fair-0.jpg",
+            width: 4,
+            height: 5
+          },
+          {
+            src: "../assets/images/events/gallery/thurstonco-fair-1.jpg",
+            width: 4,
+            height: 3
+          },
+          {
+            src: "../assets/images/events/gallery/thurstonco-fair-2.jpg",
+            width: 3,
+            height: 2
+          },
+          {
+            src: "../assets/images/events/gallery/thurstonco-fair-3.jpg",
+            width: 11,
+            height: 8
+          },
+          {
+            src: "../assets/images/events/gallery/thurstonco-fair-4.jpg",
+            width: 3,
+            height: 2
+          },
+          {
+            src: "../assets/images/events/gallery/thurstonco-fair-5.jpg",
+            width: 5,
+            height: 9
+          },
+          {
+            src: "../assets/images/events/gallery/thurstonco-fair-6.jpg",
+            width: 7,
+            height: 5
+          },
+          {
+            src: "../assets/images/events/gallery/thurstonco-fair-7.jpg",
+            width: 5,
+            height: 4
+          },
+          {
+            src: "../assets/images/events/gallery/thurstonco-fair-8.jpg",
+            width: 2,
+            height: 3
+          },
+          {
+            src: "../assets/images/events/gallery/thurstonco-fair-9.jpg",
+            width: 4,
+            height: 3
+          }
+        ]
     },
     {
         id: 2,
@@ -33,7 +137,59 @@ export const EVENTS = [
         price: "$",
         date: "Aug 7-8",
         url: 'https://olybrewfest.com/',
-        description: "The Olympia Brew Fest is an annual summer beer festival that takes place at the Port Plaza in Olympia, WA. It features 30+ hand-picked, northwest breweries and over 60 different beers. Sample local food and enjoy live music at the stage right by the harbor. Proceeds from the festival benefit the Thurston County Chamber Foundation Small Business Development (Incubator) Program. Come and celebrate Olympia's fine brewing heritage!"
+        description: "The Olympia Brew Fest is an annual summer beer festival that takes place at the Port Plaza in Olympia, WA. It features 30+ hand-picked, northwest breweries and over 60 different beers. Sample local food and enjoy live music at the stage right by the harbor. Proceeds from the festival benefit the Thurston County Chamber Foundation Small Business Development (Incubator) Program. Come and celebrate Olympia's fine brewing heritage!",
+        photos: [
+          {
+            src: "../assets/images/events/gallery/olympia-brew-0.jpg",
+            width: 19,
+            height: 10
+          },
+          {
+            src: "../assets/images/events/gallery/olympia-brew-1.jpg",
+            width: 3,
+            height: 2
+          },
+          {
+            src: "../assets/images/events/gallery/olympia-brew-2.jpg",
+            width: 1,
+            height: 1
+          },
+          {
+            src: "../assets/images/events/gallery/olympia-brew-3.jpg",
+            width: 3,
+            height: 2
+          },
+          {
+            src: "../assets/images/events/gallery/olympia-brew-4.jpg",
+            width: 3,
+            height: 2
+          },
+          {
+            src: "../assets/images/events/gallery/olympia-brew-5.jpg",
+            width: 3,
+            height: 2
+          },
+          {
+            src: "../assets/images/events/gallery/olympia-brew-6.jpg",
+            width: 1,
+            height: 1
+          },
+          {
+            src: "../assets/images/events/gallery/olympia-brew-7.jpg",
+            width: 3,
+            height: 2
+          },
+          {
+            src: "../assets/images/events/gallery/olympia-brew-8.jpg",
+            width: 4,
+            height: 3
+          },
+          {
+            src: "../assets/images/events/gallery/olympia-brew-9.jpg",
+            width: 8,
+            height: 5
+          }
+        ]
     },
     {
         id: 3,
@@ -45,7 +201,59 @@ export const EVENTS = [
         price: "$$",
         date: "June 19-20",
         url: "http://olympicairshow.com/",
-        description: "The Western Washington air show season kicks off on Father’s Day Weekend at the celebrated Olympic Air Show, hosted by the Olympic Flight Museum at the Olympia Regional Airport.The Olympic Air Show is recognized for its wide variety of military aircraft, from nostalgic vintage bi-planes to high-performance jets. As the largest warbird-only gathering in the Pacific Northwest, the show features three hours of outstanding aerobatic performances by visiting aircraft, in addition to the low-level aerobatic demonstration by the museum’s own P-51D Mustang, American Beauty."
+        description: "The Western Washington air show season kicks off on Father’s Day Weekend at the celebrated Olympic Air Show, hosted by the Olympic Flight Museum at the Olympia Regional Airport.The Olympic Air Show is recognized for its wide variety of military aircraft, from nostalgic vintage bi-planes to high-performance jets. As the largest warbird-only gathering in the Pacific Northwest, the show features three hours of outstanding aerobatic performances by visiting aircraft, in addition to the low-level aerobatic demonstration by the museum’s own P-51D Mustang, American Beauty.",
+        photos: [
+          {
+            src: "../assets/images/events/gallery/olympia-airshow-0.jpg",
+            width: 3,
+            height: 2
+          },
+          {
+            src: "../assets/images/events/gallery/olympia-airshow-1.jpg",
+            width: 16,
+            height: 9
+          },
+          {
+            src: "../assets/images/events/gallery/olympia-airshow-2.jpg",
+            width: 3,
+            height: 2
+          },
+          {
+            src: "../assets/images/events/gallery/olympia-airshow-3.jpg",
+            width: 3,
+            height: 2
+          },
+          {
+            src: "../assets/images/events/gallery/olympia-airshow-4.jpg",
+            width: 5,
+            height: 3
+          },
+          {
+            src: "../assets/images/events/gallery/olympia-airshow-5.jpg",
+            width: 3,
+            height: 1
+          },
+          {
+            src: "../assets/images/events/gallery/olympia-airshow-6.jpg",
+            width: 1,
+            height: 1
+          },
+          {
+            src: "../assets/images/events/gallery/olympia-airshow-7.jpg",
+            width: 1,
+            height: 1
+          },
+          {
+            src: "../assets/images/events/gallery/olympia-airshow-8.jpg",
+            width: 2,
+            height: 1
+          },
+          {
+            src: "../assets/images/events/gallery/olympia-airshow-9.jpg",
+            width: 3,
+            height: 4
+          }
+        ]
     },
     {
         id: 4,
@@ -57,7 +265,59 @@ export const EVENTS = [
         price: "$0 - $68",
         url: 'https://nwpiratefestival.com/',
         date: "July 10 - 11",
-        description: "Hoist the mainsails, don your best pirate attire & eye-patch, and, practice your Arrhhh! to add a dash of shiver to yer timbers! Join our 2 infamous Pirate crews on July 10th - 11th, 2021 as they seek to win your favor & support with music & shanties, entertaining battles, cannons, shenanigans and more! Food is aplenty at The Galley, you can drink rum & grog at The Crow’s Nest Inn and buy all sorts of baubles & trinkets at The Market for every sea-fairer in every price range. Young and old – ALL are invited to join in on the festivities of Black Sand Bay & the NW Pirate Festival so come dressed in your BEST pirate attire!"
+        description: "Hoist the mainsails, don your best pirate attire & eye-patch, and, practice your Arrhhh! to add a dash of shiver to yer timbers! Join our 2 infamous Pirate crews on July 10th - 11th, 2021 as they seek to win your favor & support with music & shanties, entertaining battles, cannons, shenanigans and more! Food is aplenty at The Galley, you can drink rum & grog at The Crow’s Nest Inn and buy all sorts of baubles & trinkets at The Market for every sea-fairer in every price range. Young and old – ALL are invited to join in on the festivities of Black Sand Bay & the NW Pirate Festival so come dressed in your BEST pirate attire!",
+        photos: [
+          {
+            src: "../assets/images/events/gallery/nwpirate-festival-0.png",
+            width: 1,
+            height: 1
+          },
+          {
+            src: "../assets/images/events/gallery/nwpirate-festival-1.jpg",
+            width: 15,
+            height: 9
+          },
+          {
+            src: "../assets/images/events/gallery/nwpirate-festival-2.jpg",
+            width: 2,
+            height: 1
+          },
+          {
+            src: "../assets/images/events/gallery/nwpirate-festival-3.jpg",
+            width: 3,
+            height: 2
+          },
+          {
+            src: "../assets/images/events/gallery/nwpirate-festival-4.jpg",
+            width: 16,
+            height: 9
+          },
+          {
+            src: "../assets/images/events/gallery/nwpirate-festival-5.jpg",
+            width: 3,
+            height: 2
+          },
+          {
+            src: "../assets/images/events/gallery/nwpirate-festival-6.jpg",
+            width: 9,
+            height: 8
+          },
+          {
+            src: "../assets/images/events/gallery/nwpirate-festival-7.jpg",
+            width: 3,
+            height: 2
+          },
+          {
+            src: "../assets/images/events/gallery/nwpirate-festival-8.jpg",
+            width: 11,
+            height: 7
+          },
+          {
+            src: "../assets/images/events/gallery/nwpirate-festival-9.jpg",
+            width: 3,
+            height: 2
+          }
+        ]
     },
     {
         id: 5,
@@ -113,6 +373,7 @@ export const EVENTS = [
         image: 'assets/images/events/tumwater-brewfest-thumbnail.jpg',
         rating: 4.3,
         address: "555 Israel Road SW, Tumwater, WA 98501",
+        type: "Outdoor Festival",
         price: "Free",
         url: 'https://tumwaterartesianbrewfest.com/',
         date: "Aug 21",

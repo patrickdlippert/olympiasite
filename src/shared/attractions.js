@@ -8,42 +8,57 @@ export const ATTRACTIONS = [
         type:"Park",
         price: "$4 per four adults", 
         description: "Located on the Nisqually River Delta in Southern Puget Sound, this refuge consists of three thousand acres of salt and freshwater marshes, grasslands and mixed forest habitats that provide a resting and nesting area for a wide variety of migratory birds. The Refuge features a one mile long boardwalk that extends out over the estuary, providing an up-close look at the wildlife and their ecosystems.",
-        comments: [
-            {
-                id: 0,
-                rating: 5, 
-                text: "What a magnificent view!",
-                author: "Tinus Lorvaldes",
-                date: "2018-10-25T16:30Z"
-            },
-            {
-                id: 1,
-                rating: 4, 
-                text: "The campground was beautiful, but the bugs could bite sometimes.",
-                author: "Brennen Ech",
-                date: "2017-06-17T03:33Z"
-            },
-            {
-                id: 2,
-                rating: 5, 
-                text: "I caught a world-record-breaking trout here on my last visit.",
-                author: "McKenzie Sebastian",
-                date: "2019-02-18T18:12Z"
-            },
-            {
-                id: 3,
-                rating: 5, 
-                text: "A wonderful place to reconnect with nature.",
-                author: "Jordan Runn",
-                date: "2019-08-04T20:11Z"
-            },
-            {
-                id: 4,
-                rating: 4, 
-                text: "The stars at night were magnificent!",
-                author: "Ann Dabramov",
-                date: "2018-07-23T19:44Z"
-            }
+         photos: [
+          {
+            src: "../assets/images/attractions/gallery/nisqually-refuge-0.jpg",
+            width: 15,
+            height: 9
+          },
+          {
+            src: "../assets/images/attractions/gallery/nisqually-refuge-1.jpg",
+            width: 3,
+            height: 2
+          },
+          {
+            src: "../assets/images/attractions/gallery/nisqually-refuge-2.jpg",
+            width: 4,
+            height: 3
+          },
+          {
+            src: "../assets/images/attractions/gallery/nisqually-refuge-3.jpg",
+            width: 16,
+            height: 9
+          },
+          {
+            src: "../assets/images/attractions/gallery/nisqually-refuge-4.jpg",
+            width: 2,
+            height: 3
+          },
+          {
+            src: "../assets/images/attractions/gallery/nisqually-refuge-5.jpg",
+            width: 4,
+            height: 3
+          },
+          {
+            src: "../assets/images/attractions/gallery/nisqually-refuge-6.jpg",
+            width: 3,
+            height: 2
+          },
+          {
+            src: "../assets/images/attractions/gallery/nisqually-refuge-7.jpg",
+            width: 4,
+            height: 3
+          },
+          {
+            src: "../assets/images/attractions/gallery/nisqually-refuge-8.jpg",
+            width: 19,
+            height: 7
+          },
+          {
+            src: "../assets/images/attractions/gallery/nisqually-refuge-9.jpg",
+            width: 5,
+            height: 3
+          }
         ]
     },
     {
@@ -55,43 +70,58 @@ export const ATTRACTIONS = [
         type:"Park",
         price: "Free",
         description: 'The Tumwater Falls Park houses a one-half mile scenic loop trail along the Deschutes River and three cascading waterfalls, with interpretive signs featuring pictures that illustrate the history of the area. Glimpse the old Olympic Brewery from the lower falls. Built in 1906, it housed the works that made "...what was unqualifiably the best beer made on the West Coast," according to a local newspaper. What made it so great? Olympia owner Leopold Schmidt discovered some artesian wells and used that water to make his beer. People said it was of unparalleled quality.',
-        comments: [
+        photos: [
             {
-                id: 0,
-                rating: 5, 
-                text: "What a magnificent view!",
-                author: "Tinus Lorvaldes",
-                date: "2018-10-25T16:30Z"
+              src: "../assets/images/attractions/gallery/tumwater-falls-0.jpg",
+              width: 3,
+              height: 4
             },
             {
-                id: 1,
-                rating: 4, 
-                text: "The campground was beautiful, but the bugs could bite sometimes.",
-                author: "Brennen Ech",
-                date: "2017-06-17T03:33Z"
+              src: "../assets/images/attractions/gallery/tumwater-falls-1.jpg",
+              width: 9,
+              height: 5
             },
             {
-                id: 2,
-                rating: 5, 
-                text: "I caught a world-record-breaking trout here on my last visit.",
-                author: "McKenzie Sebastian",
-                date: "2019-02-18T18:12Z"
+              src: "../assets/images/attractions/gallery/tumwater-falls-2.jpg",
+              width: 2,
+              height: 1
             },
             {
-                id: 3,
-                rating: 5, 
-                text: "A wonderful place to reconnect with nature.",
-                author: "Jordan Runn",
-                date: "2019-08-04T20:11Z"
+              src: "../assets/images/attractions/gallery/tumwater-falls-3.jpg",
+              width: 9,
+              height: 16
             },
             {
-                id: 4,
-                rating: 4, 
-                text: "The stars at night were magnificent!",
-                author: "Ann Dabramov",
-                date: "2018-07-23T19:44Z"
+              src: "../assets/images/attractions/gallery/tumwater-falls-4.jpg",
+              width: 2,
+              height: 1
+            },
+            {
+              src: "../assets/images/attractions/gallery/tumwater-falls-5.jpg",
+              width: 16,
+              height: 9
+            },
+            {
+              src: "../assets/images/attractions/gallery/tumwater-falls-6.jpg",
+              width: 5,
+              height: 4
+            },
+            {
+              src: "../assets/images/attractions/gallery/tumwater-falls-7.jpg",
+              width: 3,
+              height: 2
+            },
+            {
+              src: "../assets/images/attractions/gallery/tumwater-falls-8.jpg",
+              width: 4,
+              height: 3
+            },
+            {
+              src: "../assets/images/attractions/gallery/tumwater-falls-9.jpg",
+              width: 4,
+              height: 3
             }
-        ]
+          ]
     },
     {
         id: 2,
@@ -102,43 +132,58 @@ export const ATTRACTIONS = [
         type:"Tour", 
         price: "Free",
         description: "The Washington State Capitol (or Legislative Building) in Olympia is the home of the government of the state of Washington. It contains chambers for the Washington State Legislature and offices for the governor, lieutenant governor, secretary of state and treasurer and is part of a campus consisting of several buildings. Buildings for the Washington Supreme Court, executive agencies and the Washington Governor's Mansion are part of the capitol campus. A visit to the Washington State Capitol Campus isn’t complete without a guided tour of the Legislative Building. These free, walking tours are offered daily and typically last about 50 minutes. You can also wander the Campus and take in the many memorials, gardens, and special events featured on the grounds.",
-        comments: [
+        photos: [
             {
-                id: 0,
-                rating: 5, 
-                text: "What a magnificent view!",
-                author: "Tinus Lorvaldes",
-                date: "2018-10-25T16:30Z"
+              src: "../assets/images/attractions/gallery/state-capitol-0.jpg",
+              width: 4,
+              height: 3
             },
             {
-                id: 1,
-                rating: 4, 
-                text: "The campground was beautiful, but the bugs could bite sometimes.",
-                author: "Brennen Ech",
-                date: "2017-06-17T03:33Z"
+              src: "../assets/images/attractions/gallery/state-capitol-1.jpg",
+              width: 3,
+              height: 4
             },
             {
-                id: 2,
-                rating: 5, 
-                text: "I caught a world-record-breaking trout here on my last visit.",
-                author: "McKenzie Sebastian",
-                date: "2019-02-18T18:12Z"
+              src: "../assets/images/attractions/gallery/state-capitol-2.jpg",
+              width: 4,
+              height: 3
             },
             {
-                id: 3,
-                rating: 5, 
-                text: "A wonderful place to reconnect with nature.",
-                author: "Jordan Runn",
-                date: "2019-08-04T20:11Z"
+              src: "../assets/images/attractions/gallery/state-capitol-3.jpg",
+              width: 9,
+              height: 16
             },
             {
-                id: 4,
-                rating: 4, 
-                text: "The stars at night were magnificent!",
-                author: "Ann Dabramov",
-                date: "2018-07-23T19:44Z"
+              src: "../assets/images/attractions/gallery/state-capitol-4.jpg",
+              width: 6,
+              height: 1
+            },
+            {
+              src: "../assets/images/attractions/gallery/state-capitol-5.jpg",
+              width: 3,
+              height: 2
+            },
+            {
+              src: "../assets/images/attractions/gallery/state-capitol-6.jpg",
+              width: 3,
+              height: 2
+            },
+            {
+              src: "../assets/images/attractions/gallery/state-capitol-7.jpg",
+              width: 5,
+              height: 7
+            },
+            {
+              src: "../assets/images/attractions/gallery/state-capitol-8.jpg",
+              width: 1,
+              height: 1
+            },
+            {
+              src: "../assets/images/attractions/gallery/state-capitol-9.jpg",
+              width: 2,
+              height: 1
             }
-        ]
+          ]
     },
     {
         id: 3,
@@ -148,44 +193,7 @@ export const ATTRACTIONS = [
         address: "700 Capitol Way N, Olympia, WA 98501",
         type:"Shopping", 
         price: "Free",
-        description: "The second largest farmers market in the state of Washington. The Olympia Farmers Market offers locally grown and organic produce, fruit from across Washington State, fresh meat from local farms, seafood, cut flowers, bakery items, desserts, eggs, cheese, plant starts and other nursery products, and artisan foods.  Enjoy live music while sampling the food vendors.",
-        comments: [
-            {
-                id: 0,
-                rating: 5, 
-                text: "What a magnificent view!",
-                author: "Tinus Lorvaldes",
-                date: "2018-10-25T16:30Z"
-            },
-            {
-                id: 1,
-                rating: 4, 
-                text: "The campground was beautiful, but the bugs could bite sometimes.",
-                author: "Brennen Ech",
-                date: "2017-06-17T03:33Z"
-            },
-            {
-                id: 2,
-                rating: 5, 
-                text: "I caught a world-record-breaking trout here on my last visit.",
-                author: "McKenzie Sebastian",
-                date: "2019-02-18T18:12Z"
-            },
-            {
-                id: 3,
-                rating: 5, 
-                text: "A wonderful place to reconnect with nature.",
-                author: "Jordan Runn",
-                date: "2019-08-04T20:11Z"
-            },
-            {
-                id: 4,
-                rating: 4, 
-                text: "The stars at night were magnificent!",
-                author: "Ann Dabramov",
-                date: "2018-07-23T19:44Z"
-            }
-        ]
+        description: "The second largest farmers market in the state of Washington. The Olympia Farmers Market offers locally grown and organic produce, fruit from across Washington State, fresh meat from local farms, seafood, cut flowers, bakery items, desserts, eggs, cheese, plant starts and other nursery products, and artisan foods.  Enjoy live music while sampling the food vendors."  
     },
     {
         id: 4,
@@ -195,44 +203,7 @@ export const ATTRACTIONS = [
         address: "404 Jefferson St NE, Olympia, WA 98501",
         type:"Museum", 
         price: "$14.95",
-        description: "The museum has 28,000 square feet of indoor space and was built in November 2012. Its eight themed galleries create a sense of wonder and delight children who learn about science, technology, engineering, art and math through 150+ hands-on exhibits. The museum also has a half-acre Outdoor Discovery Center, one of the nation’s pilot sites for the Going Wild Program, where children can reconnect with nature. Hands On can also be the setting for your most memorable event ever! With a half-acre of indoor space, in addition to a half-acre outdoor space complete with a beach, garden and lighthouse lookout, the museum is a unique venue your guests will love. ",
-        comments: [
-            {
-                id: 0,
-                rating: 5, 
-                text: "What a magnificent view!",
-                author: "Tinus Lorvaldes",
-                date: "2018-10-25T16:30Z"
-            },
-            {
-                id: 1,
-                rating: 4, 
-                text: "The campground was beautiful, but the bugs could bite sometimes.",
-                author: "Brennen Ech",
-                date: "2017-06-17T03:33Z"
-            },
-            {
-                id: 2,
-                rating: 5, 
-                text: "I caught a world-record-breaking trout here on my last visit.",
-                author: "McKenzie Sebastian",
-                date: "2019-02-18T18:12Z"
-            },
-            {
-                id: 3,
-                rating: 5, 
-                text: "A wonderful place to reconnect with nature.",
-                author: "Jordan Runn",
-                date: "2019-08-04T20:11Z"
-            },
-            {
-                id: 4,
-                rating: 4, 
-                text: "The stars at night were magnificent!",
-                author: "Ann Dabramov",
-                date: "2018-07-23T19:44Z"
-            }
-        ]
+        description: "The museum has 28,000 square feet of indoor space and was built in November 2012. Its eight themed galleries create a sense of wonder and delight children who learn about science, technology, engineering, art and math through 150+ hands-on exhibits. The museum also has a half-acre Outdoor Discovery Center, one of the nation’s pilot sites for the Going Wild Program, where children can reconnect with nature. Hands On can also be the setting for your most memorable event ever! With a half-acre of indoor space, in addition to a half-acre outdoor space complete with a beach, garden and lighthouse lookout, the museum is a unique venue your guests will love. "
     },
     {
         id: 5,
@@ -242,44 +213,7 @@ export const ATTRACTIONS = [
         address: "2600 East Bay Dr NE, Olympia, WA 98506",
         type:"Park",
         price: "Free",
-        description: "Priest Point Park is a 314 acre park and the ideal spot to experience the natural beauty of the northwest. With more than four miles of hiking trails, nearly two miles of saltwater shoreline, a playground, and both small and large picnic shelters, there is something for everyone to enjoy. Priest Point Park is also home to a wide variety of animals.",
-        comments: [
-            {
-                id: 0,
-                rating: 5, 
-                text: "What a magnificent view!",
-                author: "Tinus Lorvaldes",
-                date: "2018-10-25T16:30Z"
-            },
-            {
-                id: 1,
-                rating: 4, 
-                text: "The campground was beautiful, but the bugs could bite sometimes.",
-                author: "Brennen Ech",
-                date: "2017-06-17T03:33Z"
-            },
-            {
-                id: 2,
-                rating: 5, 
-                text: "I caught a world-record-breaking trout here on my last visit.",
-                author: "McKenzie Sebastian",
-                date: "2019-02-18T18:12Z"
-            },
-            {
-                id: 3,
-                rating: 5, 
-                text: "A wonderful place to reconnect with nature.",
-                author: "Jordan Runn",
-                date: "2019-08-04T20:11Z"
-            },
-            {
-                id: 4,
-                rating: 4, 
-                text: "The stars at night were magnificent!",
-                author: "Ann Dabramov",
-                date: "2018-07-23T19:44Z"
-            }
-        ]
+        description: "Priest Point Park is a 314 acre park and the ideal spot to experience the natural beauty of the northwest. With more than four miles of hiking trails, nearly two miles of saltwater shoreline, a playground, and both small and large picnic shelters, there is something for everyone to enjoy. Priest Point Park is also home to a wide variety of animals."
     },
     {
         id: 6,
@@ -289,44 +223,7 @@ export const ATTRACTIONS = [
         address: "217 Thurson Ave NW, Olympia, WA 98501",
         type:"Park",
         price: "Free",
-        description: "Percival Landing is one of Olympia's three waterfront parks and is located on the east side of Budd Bay on the southern most tip of Puget Sound. This popular park and tourist destination is in the heart of downtown and is a hub for gatherings, social interaction and public celebrations.  It not only contributes to the economic vitality of the central business district, it holds historical and cultural significance to the community.",
-        comments: [
-            {
-                id: 0,
-                rating: 5, 
-                text: "What a magnificent view!",
-                author: "Tinus Lorvaldes",
-                date: "2018-10-25T16:30Z"
-            },
-            {
-                id: 1,
-                rating: 4, 
-                text: "The campground was beautiful, but the bugs could bite sometimes.",
-                author: "Brennen Ech",
-                date: "2017-06-17T03:33Z"
-            },
-            {
-                id: 2,
-                rating: 5, 
-                text: "I caught a world-record-breaking trout here on my last visit.",
-                author: "McKenzie Sebastian",
-                date: "2019-02-18T18:12Z"
-            },
-            {
-                id: 3,
-                rating: 5, 
-                text: "A wonderful place to reconnect with nature.",
-                author: "Jordan Runn",
-                date: "2019-08-04T20:11Z"
-            },
-            {
-                id: 4,
-                rating: 4, 
-                text: "The stars at night were magnificent!",
-                author: "Ann Dabramov",
-                date: "2018-07-23T19:44Z"
-            }
-        ]
+        description: "Percival Landing is one of Olympia's three waterfront parks and is located on the east side of Budd Bay on the southern most tip of Puget Sound. This popular park and tourist destination is in the heart of downtown and is a hub for gatherings, social interaction and public celebrations.  It not only contributes to the economic vitality of the central business district, it holds historical and cultural significance to the community."
     },
     {
         id: 7,
@@ -336,44 +233,7 @@ export const ATTRACTIONS = [
         address: "7730 61st Ave NE, Olympia, WA 98506",
         type:"Park",
         price: "Free",
-        description: "Tolmie State Park is a 105-acre marine day-use park with 1,800 feet of saltwater shoreline on Puget Sound. This forested park is on Nisqually Beach, a few miles from Olympia, the state's capital city. The park offers a variety of beachside activities and an underwater park built by scuba divers. The park features an underwater park for scuba divers, a saltwater marsh, a beach, a forest and abundant wildlife.",
-        comments: [
-            {
-                id: 0,
-                rating: 5, 
-                text: "What a magnificent view!",
-                author: "Tinus Lorvaldes",
-                date: "2018-10-25T16:30Z"
-            },
-            {
-                id: 1,
-                rating: 4, 
-                text: "The campground was beautiful, but the bugs could bite sometimes.",
-                author: "Brennen Ech",
-                date: "2017-06-17T03:33Z"
-            },
-            {
-                id: 2,
-                rating: 5, 
-                text: "I caught a world-record-breaking trout here on my last visit.",
-                author: "McKenzie Sebastian",
-                date: "2019-02-18T18:12Z"
-            },
-            {
-                id: 3,
-                rating: 5, 
-                text: "A wonderful place to reconnect with nature.",
-                author: "Jordan Runn",
-                date: "2019-08-04T20:11Z"
-            },
-            {
-                id: 4,
-                rating: 4, 
-                text: "The stars at night were magnificent!",
-                author: "Ann Dabramov",
-                date: "2018-07-23T19:44Z"
-            }
-        ]
+        description: "Tolmie State Park is a 105-acre marine day-use park with 1,800 feet of saltwater shoreline on Puget Sound. This forested park is on Nisqually Beach, a few miles from Olympia, the state's capital city. The park offers a variety of beachside activities and an underwater park built by scuba divers. The park features an underwater park for scuba divers, a saltwater marsh, a beach, a forest and abundant wildlife."
     },
     {
         id: 8,
@@ -383,44 +243,7 @@ export const ATTRACTIONS = [
         address: "12315 Waddell Creek Rd SW, Olympia, WA 98512",
         type:"Park",
         price: "Free",
-        description: "These mysterious mounds inspire imagination and speculation among visitors. With a half-mile ADA accessible path and another two miles of more rugged wandering, the Mima Mounds are a great destination for many hikers. Just what created these odd, bubble-like mounds southwest of Olympia is a mystery. And this puzzle is one with proposed answers ranging from giant gophers to earthquakes and glaciation, as well as extraterrestrial activity. Whatever the answer, the Mima Mounds Natural Area Preserve is a great place for walking or hiking, particularly in the spring when the wildflowers are in bloom on the rolling hills.",
-        comments: [
-            {
-                id: 0,
-                rating: 5, 
-                text: "What a magnificent view!",
-                author: "Tinus Lorvaldes",
-                date: "2018-10-25T16:30Z"
-            },
-            {
-                id: 1,
-                rating: 4, 
-                text: "The campground was beautiful, but the bugs could bite sometimes.",
-                author: "Brennen Ech",
-                date: "2017-06-17T03:33Z"
-            },
-            {
-                id: 2,
-                rating: 5, 
-                text: "I caught a world-record-breaking trout here on my last visit.",
-                author: "McKenzie Sebastian",
-                date: "2019-02-18T18:12Z"
-            },
-            {
-                id: 3,
-                rating: 5, 
-                text: "A wonderful place to reconnect with nature.",
-                author: "Jordan Runn",
-                date: "2019-08-04T20:11Z"
-            },
-            {
-                id: 4,
-                rating: 4, 
-                text: "The stars at night were magnificent!",
-                author: "Ann Dabramov",
-                date: "2018-07-23T19:44Z"
-            }
-        ]
+        description: "These mysterious mounds inspire imagination and speculation among visitors. With a half-mile ADA accessible path and another two miles of more rugged wandering, the Mima Mounds are a great destination for many hikers. Just what created these odd, bubble-like mounds southwest of Olympia is a mystery. And this puzzle is one with proposed answers ranging from giant gophers to earthquakes and glaciation, as well as extraterrestrial activity. Whatever the answer, the Mima Mounds Natural Area Preserve is a great place for walking or hiking, particularly in the spring when the wildflowers are in bloom on the rolling hills."
     },
     {
         id: 9,
@@ -430,43 +253,6 @@ export const ATTRACTIONS = [
         address: "8431 Waldrick Rd SE, Tenino, WA 98589",
         type:"Park",
         price: "Free (donations appreciated)",
-        description: "Monarch Sculpture Park is a contemporary and somewhat quirky outdoor sculpture park and center for the arts. The grounds are open to the public daily from dawn to dusk. Located in the heart of the Thurston County prairie lands just a few miles south of Olympia, near Tenino, Washington, the park is designated as a primitive park with walk in, bike in, access from the Chehalis Western Trail. The park will continue its legacy of fine art and sculpture in nature. Monarch is a part of the Thurston County Bountiful Byways project. Its neighbors include the internationally renowned Wolf Haven and the new Great Wolf Lodge. Pets are welcome but must be leashed at and cleaned up after.",
-        comments: [
-            {
-                id: 0,
-                rating: 5, 
-                text: "What a magnificent view!",
-                author: "Tinus Lorvaldes",
-                date: "2018-10-25T16:30Z"
-            },
-            {
-                id: 1,
-                rating: 4, 
-                text: "The campground was beautiful, but the bugs could bite sometimes.",
-                author: "Brennen Ech",
-                date: "2017-06-17T03:33Z"
-            },
-            {
-                id: 2,
-                rating: 5, 
-                text: "I caught a world-record-breaking trout here on my last visit.",
-                author: "McKenzie Sebastian",
-                date: "2019-02-18T18:12Z"
-            },
-            {
-                id: 3,
-                rating: 5, 
-                text: "A wonderful place to reconnect with nature.",
-                author: "Jordan Runn",
-                date: "2019-08-04T20:11Z"
-            },
-            {
-                id: 4,
-                rating: 4, 
-                text: "The stars at night were magnificent!",
-                author: "Ann Dabramov",
-                date: "2018-07-23T19:44Z"
-            }
-        ]
+        description: "Monarch Sculpture Park is a contemporary and somewhat quirky outdoor sculpture park and center for the arts. The grounds are open to the public daily from dawn to dusk. Located in the heart of the Thurston County prairie lands just a few miles south of Olympia, near Tenino, Washington, the park is designated as a primitive park with walk in, bike in, access from the Chehalis Western Trail. The park will continue its legacy of fine art and sculpture in nature. Monarch is a part of the Thurston County Bountiful Byways project. Its neighbors include the internationally renowned Wolf Haven and the new Great Wolf Lodge. Pets are welcome but must be leashed at and cleaned up after."
     }
 ];
