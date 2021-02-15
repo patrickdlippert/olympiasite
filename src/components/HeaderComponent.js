@@ -28,7 +28,7 @@ class Header extends Component {
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-sm-6">
-                                <img className="img-fluid" src="assets/images/OlympiaTopTen.png" alt="Olympia Logo"></img>
+                                <img className="img-fluid" src="/assets/images/OlympiaTopTen.png" alt="Olympia Logo"></img>
                             </div>
                             <div className="col-sm-6">
                                 <MDBAnimation reveal type="fadeInRight">
@@ -41,7 +41,7 @@ class Header extends Component {
                 
                 <Navbar dark sticky="top" color="primary" expand="md" className="navbar-default">
                     <div className="container">
-                        <NavbarBrand className="mr-auto" href="/"><img className="img-fluid" src="assets/images/OlympiaTenOval.png" alt="Olympia Logo" /></NavbarBrand>
+                        <NavbarBrand className="mr-auto" href="/"><img className="img-fluid" src="/assets/images/OlympiaTenOval.png" alt="Olympia Logo" /></NavbarBrand>
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                                 <Nav navbar className="ml-auto navbar-nav">

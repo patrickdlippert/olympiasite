@@ -7,7 +7,7 @@ function Footer(props) {
             <div className="container">
                 <div className="row"> 
                 <div className="col-4 col-sm-3 text-center">
-                        <img className="img-fluid footer-image" src="./assets/images/olympia-map.png" alt="Olympia Map" />
+                        <img className="img-fluid footer-image" src="/assets/images/olympia-map.png" alt="Olympia Map" />
                     </div>           
                     <div className="col-4 col-sm-2">
                         <h5>Links</h5>
@@ -27,7 +27,7 @@ function Footer(props) {
                     </div>
 
                     <div className="col-sm-3 text-center">
-                        <img className="img-fluid footer-image" src="./assets/images/OlympiaTopTen.png" alt="Olympia Top 10 Logo" />
+                        <img className="img-fluid footer-image" src="/assets/images/OlympiaTopTen.png" alt="Olympia Top 10 Logo" />
                         <a role="button" className="btn btn-link" href="mailto:olympiatopten@gmail.com"><i className="fa fa-envelope-o" />olympiatopten@gmail.com</a>
                     </div>
                 </div>
