@@ -13,7 +13,6 @@ function HighlightInfo({highlight}) {
                     <div className="col">
                         <h2>{highlight.name}</h2>
                         <h5>{highlight.date}</h5>
-                        <p>{highlight.description}</p>
                         <hr />
                     </div>
                     </MDBAnimation>
@@ -21,6 +20,7 @@ function HighlightInfo({highlight}) {
                 <div className="row row-content">     
                     <MDBAnimation reveal type="fadeIn">
                         <Gallery photos={highlight.photos} />
+                        <br/><p>{highlight.description}</p>
                     </MDBAnimation>
                 </div>
             </div>

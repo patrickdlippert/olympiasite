@@ -3,6 +3,7 @@ import Guide from './GuideComponent';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
 import Home from './HomeComponent';
+import HighlightInfo from './HighlightInfoComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { ATTRACTIONS } from '../shared/attractions';
 import { RESTAURANTS } from '../shared/restaurants';
@@ -11,7 +12,6 @@ import { RESOURCES } from '../shared/resources';
 import { SPONSORS } from '../shared/sponsors';
 import { PROMOTIONS } from '../shared/promotions';
 import ScrollToTop from './ScrollToTop';
-import HighlightInfo from './HighlightInfoComponent'
 
 class Main extends Component {
   constructor(props) {
@@ -38,23 +38,18 @@ class Main extends Component {
     }
 
     const AttractionWithId = ({ match }) => {
-      console.log(+match.params.attractionId);
-      console.log(this.state.attractions[3]);
       return (
         <HighlightInfo highlight={this.state.attractions.filter(attraction => attraction.id === +match.params.attractionId)[0]} />
       );
     };
 
     const RestaurantWithId = ({ match }) => {
-      console.log(+match.params.restaurantId);
       return (
         <HighlightInfo highlight={this.state.restaurants.filter(restaurant => restaurant.id === +match.params.restaurantId)[0]} />
       );
     };
     
     const EventWithId = ({ match }) => {
-      console.log(+match.params.eventId);
-      console.log(this.state.events[3]);
       return (
         <HighlightInfo highlight={this.state.events.filter(event => event.id === +match.params.eventId)[0]} />
       );

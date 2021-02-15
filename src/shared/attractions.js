@@ -203,7 +203,54 @@ export const ATTRACTIONS = [
         address: "404 Jefferson St NE, Olympia, WA 98501",
         type:"Museum", 
         price: "$14.95",
-        description: "The museum has 28,000 square feet of indoor space and was built in November 2012. Its eight themed galleries create a sense of wonder and delight children who learn about science, technology, engineering, art and math through 150+ hands-on exhibits. The museum also has a half-acre Outdoor Discovery Center, one of the nation’s pilot sites for the Going Wild Program, where children can reconnect with nature. Hands On can also be the setting for your most memorable event ever! With a half-acre of indoor space, in addition to a half-acre outdoor space complete with a beach, garden and lighthouse lookout, the museum is a unique venue your guests will love. "
+        description: "The museum has 28,000 square feet of indoor space and was built in November 2012. Its eight themed galleries create a sense of wonder and delight children who learn about science, technology, engineering, art and math through 150+ hands-on exhibits. The museum also has a half-acre Outdoor Discovery Center, one of the nation’s pilot sites for the Going Wild Program, where children can reconnect with nature. Hands On can also be the setting for your most memorable event ever! With a half-acre of indoor space, in addition to a half-acre outdoor space complete with a beach, garden and lighthouse lookout, the museum is a unique venue your guests will love. ",
+        photos: [
+            {
+              src: "../assets/images/attractions/gallery/childrens-museum-0.jpg",
+              width: 3,
+              height: 2
+            },
+            {
+              src: "../assets/images/attractions/gallery/childrens-museum-1.jpg",
+              width: 9,
+              height: 7
+            },
+            {
+              src: "../assets/images/attractions/gallery/childrens-museum-2.jpg",
+              width: 9,
+              height: 7
+            },
+            {
+              src: "../assets/images/attractions/gallery/childrens-museum-3.jpg",
+              width: 3,
+              height: 2
+            },
+            {
+              src: "../assets/images/attractions/gallery/childrens-museum-4.jpg",
+              width: 3,
+              height: 2
+            },
+            {
+              src: "../assets/images/attractions/gallery/childrens-museum-5.jpg",
+              width: 3,
+              height: 4
+            },
+            {
+              src: "../assets/images/attractions/gallery/childrens-museum-6.jpg",
+              width: 5,
+              height: 3
+            },
+            {
+                src: "../assets/images/attractions/gallery/childrens-museum-7.jpg",
+                width: 4,
+                height: 3
+            },
+            {
+                src: "../assets/images/attractions/gallery/childrens-museum-8.jpg",
+                width: 3,
+                height: 2
+            }
+          ]
     },
     {
         id: 5,

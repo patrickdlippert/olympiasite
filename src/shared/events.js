@@ -9,7 +9,7 @@ export const EVENTS = [
         price: "Free",
         url: 'https://www.harbordays.com/',
         date: 'Sept 3-5',
-        description: 'Olympia Harbor Days is an annual non-profit festival, celebrates the return of the vintage tugboats of the Puget Sound to Olympia for three days of entertainment, food, art, history and a last farewell to summer. Vintage tugboats, retired or working, are moored at Olympia’s Percival Landing where you can Tour the Tugs on Saturday. Be on hand Sunday as the tugs leave shore at noon to participate in the annual World’s Largest Vintage Tugboat Races & Show! The tugs race the deep channel of Budd Bay near Butler Cove.',
+        description: 'Olympia Harbor Days is an annual non-profit festival that celebrates the return of vintage tugboats of the Puget Sound to Olympia for three days of entertainment, food, art, history and a last farewell to summer. Vintage tugboats, retired or working, are moored at Olympia’s Percival Landing where you can Tour the Tugs on Saturday. Be on hand Sunday as the tugs leave shore at noon to participate in the annual World’s Largest Vintage Tugboat Races & Show! The tugs race the deep channel of Budd Bay near Butler Cove.',
         photos: [
           {
             src: "../assets/images/events/gallery/harbor-days-0.png",
@@ -353,7 +353,44 @@ export const EVENTS = [
         price: "Free",
         url: 'http://www.JBLMFreedomFest.com/',
         date: "July 4",
-        description: "Freedom Fest offers a day of fun, food, and entertainment for the whole family. All-day attractions include a midway with carnival rides, fair food and other concessions, Kids World activities, jugglers, stilt-walkers and other roving performers and live music. Freedom Fest will take place at Cowan Stadium, north of Olympia from 11 a.m. to 11 p.m. and will culminate with a grand finale fireworks show. Admission and parking are free, and visitors should bring photo ID."
+        description: "Freedom Fest offers a day of fun, food, and entertainment for the whole family. All-day attractions include a midway with carnival rides, fair food and other concessions, Kids World activities, jugglers, stilt-walkers and other roving performers and live music. Freedom Fest will take place at Cowan Stadium, north of Olympia from 11 a.m. to 11 p.m. and will culminate with a grand finale fireworks show. Admission and parking are free, and visitors should bring photo ID.",
+        photos: [
+          {
+            src: "../assets/images/events/gallery/freedom-fest-0.jpg",
+            width: 8,
+            height: 7
+          },
+          {
+            src: "../assets/images/events/gallery/freedom-fest-1.jpg",
+            width: 16,
+            height: 9
+          },
+          {
+            src: "../assets/images/events/gallery/freedom-fest-2.jpg",
+            width: 7,
+            height: 5
+          },
+          {
+            src: "../assets/images/events/gallery/freedom-fest-3.jpg",
+            width: 3,
+            height: 2
+          },
+          {
+            src: "../assets/images/events/gallery/freedom-fest-4.jpg",
+            width: 11,
+            height: 7
+          },
+          {
+            src: "../assets/images/events/gallery/freedom-fest-5.jpg",
+            width: 3,
+            height: 2
+          },
+          {
+            src: "../assets/images/events/gallery/freedom-fest-6.jpg",
+            width: 3,
+            height: 2
+          }
+        ]
     },
     {
         id: 8,

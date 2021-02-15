@@ -14,7 +14,7 @@ function RenderGuideItem({category, highlight}) {
         if(highlight.photos) {
         return (
             <Link to={`/${category}/${highlight.id}`}>
-                <Button color="primary" size="sm"><i class="fas fa-image"></i> more</Button>
+                <Button color="primary" size="sm"><i className="fas fa-image"></i> more</Button>
             </Link>
         );}
         return <span />
