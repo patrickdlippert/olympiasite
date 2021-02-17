@@ -5,9 +5,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-// This component returns a group of 5 star icons given a rating value from 1-5
-// If a fraction is provided, it's rounded to the nearest 0.5 so that a half star
-// is displayed.
+// This component returns a scrolling carousel of card images. If the provided array of resource objects
+// has a name with displayName true, apply an text image overlay using the name. Otherwise, no text will
+// be applied.
 
 function ConstructCard({resource}) {
     if( {resource} ) {
@@ -16,7 +16,7 @@ function ConstructCard({resource}) {
                 <a target="_blank:" href={resource.url}>
                 <CardImg src={resource.image} alt={resource.name} title={resource.description}/>
                 <CardImgOverlay>
-                    <CardTitle>{resource.name}</CardTitle>
+                  <CardTitle>{`${resource.displayName ? resource.name : ''}`}</CardTitle>
                 </CardImgOverlay>
                 </a>
             </Card>
