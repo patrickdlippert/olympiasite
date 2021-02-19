@@ -18,7 +18,32 @@ function RenderGuideItem({category, highlight}) {
             </Link>
         );}
         return <span />
-         
+    };
+
+    // This function creates a link to the object's provided url (if it exists). A fontawesome icon
+    // for external link is placed in front of the url.
+    const CreateUrlLink = ({ highlight }) => {
+        if(highlight.url) {
+        return (
+            <span>
+                <i className="fas fa-external-link-alt" /> <a target="_blank:" href={highlight.url}>{highlight.url}</a>
+            </span>
+        );}
+        return <span />
+    };
+
+    // This function creates a link to the object's provided url (if it exists). A fontawesome icon
+    // for external link is placed in front of the url.
+    const CreateAddressLink = ({ highlight }) => {
+        if(highlight.address) { 
+            let link = `http://maps.google.com/maps?q=${encodeURIComponent( highlight.address)}`;
+        return (
+            <span>
+                <i className="fas fa-location-arrow" /> <a target='_blank:' href={link}>{highlight.address}</a>
+                
+            </span>
+        );}
+        return <span />
     };
 
     return (
@@ -50,9 +75,11 @@ function RenderGuideItem({category, highlight}) {
                     <h2>{highlight.name}</h2>
                     <h5>{highlight.date}</h5>
                     <p className="d-sm-block">Rating:&nbsp;<span className="text-danger">{highlight.rating}</span> &nbsp;<RatingStars rating = {highlight.rating}  />
-                    &nbsp;&nbsp;&nbsp;{highlight.price} - {highlight.type}</p>
+                    &nbsp;&nbsp;&nbsp;{highlight.price} - {highlight.type}</p> 
                     <p>{highlight.description}</p>
-                    <p>Address: {highlight.address}</p>
+                    <p>
+                    <CreateAddressLink highlight={highlight} /><br/>
+                    <CreateUrlLink highlight={highlight} /></p>
                 </MDBAnimation>
             </div>
         </React.Fragment>
