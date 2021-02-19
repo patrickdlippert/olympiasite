@@ -12,45 +12,49 @@ function RenderGuideItem({category, highlight}) {
     // within the provided highlight object
     const CreateImageLink = ({ category, highlight }) => {
         if(highlight.photos) {
-        return (
-            <Link to={`/${category}/${highlight.id}`}>
-                <Button color="primary" size="sm"><i className="fas fa-image"></i> more</Button>
-            </Link>
-        );}
+            return (
+                <Link to={`/${category}/${highlight.id}`}>
+                    <Button color="primary" size="sm"><i className="fas fa-image"></i> more</Button>
+                </Link>
+            );
+        }
         return <span />
     };
 
-    // This function creates a link to the object's provided url (if it exists). A fontawesome icon
+    // This function creates a link to the object's provided  (if it exists). A fontawesome icon
     // for external link is placed in front of the url.
     const CreateUrlLink = ({ highlight }) => {
         if(highlight.url) {
-        return (
-            <span>
-                <i className="fas fa-external-link-alt" /> <a target="_blank:" href={highlight.url}>{highlight.url}</a>
-            </span>
-        );}
+            return (
+                <span>
+                    <i className="fas fa-external-link-alt" /> <a target="_blank:" href={highlight.url}>{highlight.url}</a>
+                </span>
+            );
+        }
         return <span />
     };
 
-    // This function creates a link to the object's provided url (if it exists). A fontawesome icon
-    // for external link is placed in front of the url.
+    // This function creates a link to the object's provided address (if it exists). A fontawesome 
+    // arrow icon is placed in front of the url. The address is first encoded as a URI before being
+    // appended to a Google Maps link.
     const CreateAddressLink = ({ highlight }) => {
         if(highlight.address) { 
-            let link = `http://maps.google.com/maps?q=${encodeURIComponent( highlight.address)}`;
-        return (
-            <span>
-                <i className="fas fa-location-arrow" /> <a target='_blank:' href={link}>{highlight.address}</a>
-                
-            </span>
-        );}
+            let link = `http://maps.google.com/maps?q=${encodeURIComponent(highlight.address)}`;
+            return (
+                <span>
+                    <i className="fas fa-location-arrow" /> <a target='_blank:' href={link}>{highlight.address}</a>
+                </span>
+            );
+        }
         return <span />
     };
 
     return (
         <React.Fragment>
 
-           {/* Dynamically alternate images left and right by adding "order-md-last" to odd highlight IDs and 
-               also place a numbered purple triangle on the side of the image that is closest to the text */}
+           {/* Dynamically alternate images left and right by adding "order-md-last" to odd highlight
+                IDs and also place a numbered purple triangle on the side of the image that is closest
+                to the text */}
 
             <div className={`col col-md-7 col-xl-6 px-4 ${(highlight.id % 2) ? 'order-md-last' : ''}`} >
                 <div className="image-container">
@@ -69,7 +73,10 @@ function RenderGuideItem({category, highlight}) {
                 </div>
             </div>
 
-            {/* Create a simple text column using name, date (if one exists), rating, price, type, description and address from the highlight item. Also generate a gold star icon array for a visual represenation of the rating. The MDBAnimation component makes the text block "zoom in" to its location in the column. */}
+            {/* Create a simple text column using name, date (if one exists), rating, price, type, 
+            description, address and URLfrom the highlight item. Also generate a gold star icon array
+            for a visual represenation of the rating. The MDBAnimation component makes the text block
+            "zoom in" to its location in the column. */}
             <div className="col-md-5 col-xl-6 text-left px-4">
                 <MDBAnimation reveal type="zoomIn">
                     <h2>{highlight.name}</h2>
