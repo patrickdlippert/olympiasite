@@ -59,15 +59,15 @@ class Home extends Component {
                                                     <Form onSubmit={this.handleSweepstakes}>
                                                         <FormGroup className="text-left">
                                                             <Label htmlFor="yourFirstName">First Name</Label>
-                                                            <Input type="text" name="firstName" id="yourFirstName" placeholder="First" innerRef={input => this.firstName = input} />
+                                                            <Input type="text" name="firstName" id="yourFirstName" placeholder="First" required innerRef={input => this.firstName = input} />
                                                         </FormGroup>
                                                         <FormGroup className="text-left">
                                                             <Label htmlFor="yourLastName">Last Name</Label>
-                                                            <Input type="text" name="lastName" id="yourLastName" placeholder="Last" innerRef={input => this.lastName = input} />
+                                                            <Input type="text" name="lastName" id="yourLastName" placeholder="Last" required innerRef={input => this.lastName = input} />
                                                         </FormGroup>
                                                         <FormGroup className="text-left">
                                                             <Label htmlFor="yourEmail">Email</Label>
-                                                            <Input type="email" name="email" id="yourEmail" placeholder="name@company.com" innerRef={input => this.email = input} />
+                                                            <Input type="email" name="email" id="yourEmail" placeholder="name@company.com" required innerRef={input => this.email = input} />
                                                         </FormGroup>
                                                         <FormGroup className="text-left" check>
                                                             <Label check>
