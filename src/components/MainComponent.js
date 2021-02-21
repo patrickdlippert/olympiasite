@@ -60,14 +60,14 @@ class Main extends Component {
         <Header />
         <ScrollToTop />
         <Switch>
-          <Route path='/home' component={HomePage} />
+          <Route exact path='/' component={HomePage} />
           <Route exact path='/attractions' render={() => <Guide category={"attractions"} highlights={this.state.attractions} resources={this.state.sponsors} />} />
           <Route path='/attractions/:attractionId' component={AttractionWithId} />
           <Route exact path='/restaurants' render={() => <Guide category={"restaurants"} highlights={this.state.restaurants} resources={this.state.sponsors} />} />
           <Route path='/restaurants/:restaurantId' component={RestaurantWithId} />
           <Route exact path='/events' render={() => <Guide category={"events"} highlights={this.state.events} resources={this.state.sponsors} />} />
           <Route path='/events/:eventId' component={EventWithId} />
-          <Redirect to='/home' /> 
+          <Redirect to='/' /> 
         </Switch>
         <Footer />
       </div>
