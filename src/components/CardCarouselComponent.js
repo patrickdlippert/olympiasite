@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { Card, CardImg, CardImgOverlay, CardTitle } from 'reactstrap';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";

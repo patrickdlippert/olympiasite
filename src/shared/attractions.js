@@ -150,8 +150,8 @@ export const ATTRACTIONS = [
             },
             {
               src: "../assets/images/attractions/gallery/state-capitol-3.jpg",
-              width: 9,
-              height: 16
+              width: 4,
+              height: 3
             },
             {
               src: "../assets/images/attractions/gallery/state-capitol-4.jpg",
