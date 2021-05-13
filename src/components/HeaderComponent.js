@@ -9,6 +9,7 @@ class Header extends Component {
     super(props);
 
     this.toggleNav = this.toggleNav.bind(this);
+    this.closeNav = this.closeNav.bind(this);
     this.state = {
       isNavOpen: false
     };
@@ -18,6 +19,12 @@ class Header extends Component {
     this.setState({
       isNavOpen: !this.state.isNavOpen
     });
+  }
+
+  closeNav() {
+    if(this.state.isNavOpen === true) {
+        this.toggleNav();
+    }
   }
 
 
@@ -46,16 +53,16 @@ class Header extends Component {
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                                 <Nav navbar className="ml-auto navbar-nav">
                                     <NavItem>
-                                        <NavLink className="nav-link" to="/home">HOME</NavLink>
+                                        <NavLink onClick={this.closeNav} className="nav-link" to="/home">HOME</NavLink>
                                     </NavItem>
                                     <NavItem>
-                                        <NavLink className="nav-link" to="/attractions">ATTRACTIONS</NavLink>
+                                        <NavLink onClick={this.closeNav} className="nav-link" to="/attractions">ATTRACTIONS</NavLink>
                                     </NavItem>
                                     <NavItem>
-                                        <NavLink className="nav-link" to="/restaurants">RESTAURANTS</NavLink>
+                                        <NavLink onClick={this.closeNav} className="nav-link" to="/restaurants">RESTAURANTS</NavLink>
                                     </NavItem>
                                     <NavItem>
-                                        <NavLink className="nav-link" to="/events">EVENTS</NavLink>
+                                        <NavLink onClick={this.closeNav} className="nav-link" to="/events">EVENTS</NavLink>
                                     </NavItem>
                                 </Nav>
                         </Collapse>
